@@ -21,7 +21,7 @@ const AboutUsPage = () => {
             <Team />
             <Values />
             <Reviews reviews={reviews} />
-            <JoinCommunity title="Download our whitepaper" />
+            <JoinCommunity />
         </Layout>
     );
 };

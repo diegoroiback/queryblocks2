@@ -12,7 +12,7 @@ const BlogPage = () => {
             <Main />
             <BlogList />
             <Reviews reviews={reviews} />
-            <JoinCommunity title="Want to get involved?" />
+            <JoinCommunity />
         </Layout>
     );
 };

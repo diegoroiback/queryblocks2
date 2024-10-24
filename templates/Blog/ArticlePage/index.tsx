@@ -17,7 +17,7 @@ const ArticlePage = () => {
                 posts={posts}
                 background
             />
-            <JoinCommunity title="Download our whitepaper" />
+            <JoinCommunity />
         </Layout>
     );
 };

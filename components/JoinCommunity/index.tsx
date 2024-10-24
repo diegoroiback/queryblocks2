@@ -15,7 +15,7 @@ const images = [
 ]
 
 const JoinCommunity = () => {
-    const containerRef = useRef(null)
+    const containerRef = useRef<HTMLDivElement | null>(null)
 
     useEffect(() => {
         if (!Animation) {
@@ -23,14 +23,20 @@ const JoinCommunity = () => {
             return;
         }
 
-        lottie.loadAnimation({
+    if (containerRef.current) {
+        const animationInstance = lottie.loadAnimation({
             container: containerRef.current,
             renderer: 'svg',
             loop: true,
             autoplay: true,
             animationData: Animation,
-        })
-    }, [Animation]);
+        });
+
+        return () => {
+            animationInstance.destroy();
+        };
+        }
+    }, [Animation])
 
     return (
         <div className={styles.section}>

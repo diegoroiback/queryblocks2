@@ -12,7 +12,7 @@ const HomePage = () => {
             <Main />
             <CareersList />
             <Reviews reviews={reviews} />
-            <JoinCommunity title="Want to get involved?" />
+            <JoinCommunity />
         </Layout>
     );
 };
