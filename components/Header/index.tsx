@@ -39,14 +39,6 @@ const Header = ({}: HeaderProps) => {
                     socials={socials}
                     onClick={() => setOpen(!open)}
                 />
-                <a
-                    className={cn("button", styles.button)}
-                    href="/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <span>launch app</span>
-                </a>
             </div>
         </header>
     );

@@ -1,22 +1,14 @@
 export const socials = [
     {
-        icon: "discord",
-        href: "https://ui8.net/",
-    },
-    {
-        icon: "twitter",
-        href: "https://twitter.com/ui8",
+        icon: "linkedin",
+        href: "https://www.linkedin.com/company/queryblocks/",
     },
     {
         icon: "instagram",
-        href: "https://www.instagram.com/ui8net/",
-    },
-    {
-        icon: "telegram",
-        href: "https://ui8.net/",
+        href: "https://www.instagram.com/queryblocks/",
     },
     {
         icon: "facebook",
-        href: "https://www.facebook.com/ui8.net/",
+        href: "https://www.facebook.com/QueryBlocks/",
     },
 ];

@@ -18,18 +18,7 @@ const HomePage = () => {
     return (
         <Layout>
             <Main scrollToRef={scrollToRef} />
-            <Development scrollToRef={scrollToRef} />
-            <AboutUs />
-            <Statistics />
-            <Solutions />
-            <Posts
-                className="section"
-                title="Your gateway to everything Onix."
-                info="Stay current on the latest Onix project developments, news, and content, updated daily."
-                posts={posts}
-            />
-            <Reviews reviews={reviews} />
-            <JoinCommunity title="Want to get involved?" />
+            <JoinCommunity />
         </Layout>
     );
 };

@@ -2,6 +2,7 @@
 
 .section
     position: relative
+    overflow: hidden
     z-index: 1
     +m
         padding: 72px 0
@@ -9,11 +10,9 @@
 .container
     display: flex
     align-items: center
-    height: 700px
+    height: 800px
     +d
         height: 620px
-    +t
-        height: 500px
     +m
         height: auto
 
@@ -54,35 +53,67 @@
         width: 1240px
     +m
         display: none
-
 .image
     &:nth-child(1)
-        position: relative
+        position: absolute
+        top: -72%
+        transform: scale(1.1)
         img
             height: 100%
+        span
+            display: none !important
     &:nth-child(2)
-        left: 1%
-        bottom: -1%
+        left: 0
+        bottom: 2%
         width: 30.2%
+        +d
+            bottom: -17%
+        +t
+            bottom: 20%
     &:nth-child(3)
-        top: -15.5%
-        left: 13.8%
+        top: -2%
+        left: 13.3%
         width: 16.8%
+        +d
+            top: -2%
+            left: 13.1%
+        +t
+            top: -15%
     &:nth-child(4)
         top: 16%
         left: 36.5%
         width: 27.4%
     &:nth-child(5)
-        right: 16.4%
-        bottom: -16.2%
+        right: 16%
+        bottom: -11.2%
         width: 14.2%
+        +t
+            right: 15.7%
+            bottom: 7.8%
     &:nth-child(6)
-        top: -22.6%
-        right: -2.3%
+        top: -7.6%
+        right: -2.8%
         width: 35%
+        +d
+            top: -5.6%
+            right: -2.8%
+        +t
+            top: -18%
     &:not(:first-child)
         position: absolute
         &:before
             content: ""
             display: block
             padding-bottom: 100%
+        img
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+    svg
+        path
+            stroke: rgba($c1, .1)
+            &[stroke="rgb(75,35,73)"],
+            &[stroke="rgb(74,36,73)"]
+                stroke: $c1

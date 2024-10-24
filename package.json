@@ -1,5 +1,5 @@
 {
-  "name": "onix",
+  "name": "QueryBlocks",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,6 +12,7 @@
     "@n8tb1t/use-scroll-position": "^2.0.3",
     "@types/scroll-lock": "^2.1.0",
     "classnames": "^2.3.1",
+    "lottie-web": "^5.12.2",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-animation-on-scroll": "^5.1.0",

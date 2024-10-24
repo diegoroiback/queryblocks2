@@ -1,68 +1,86 @@
-=inter
-    font-family: "Inter", sans-serif
+// selectors
+=nl
+  &:not(:last-child)
+    @content
+=nf
+  &:not(:first-child)
+    @content
 
-=karla
-    font-family: "Karla", sans-serif
+// width
+=r($width)
+  @media only screen and (max-width: $width+ "px")
+    @content
 
-=body1
-    font-size: 24px
-    line-height: 36px
+=rmin($width)
+  @media only screen and (min-width: $width+ "px")
+    @content
 
-=body2
-    font-size: 18px
-    line-height: 27px
+// height
+=rh($height)
+  @media only screen and (max-height: $height + "px")
+    @content
 
-=tagline
-    font-size: 18px
-    line-height: 21px
-    letter-spacing: .05em
-    font-weight: 800
-    text-transform: uppercase
+=rhmin($height)
+  @media only screen and (min-height: $height + "px")
+    @content
 
-=button
-    font-size: 14px
-    line-height: 16px
-    font-weight: 800
-    text-transform: uppercase
+=text-overflow
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
 
-=text-button
-    font-size: 18px
-    line-height: 27px
-    font-weight: 500
+// retina, also available as +hdpi
+=retina
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)
+    @content
 
-=base
-    font-size: 16px
-    line-height: 19px
+// font-family
+=font($alias, $name)
+  @font-face
+    font-family: $alias
+    src: url("fonts/" + $name + ".woff2") format("woff2"), url("fonts/" + $name + ".woff") format("woff")
+    font-weight: normal
+    font-style: normal
+// to use:
+//+font(black, cytiapro-black-webfont)
 
-=baseB
-    font-size: 16px
-    line-height: 19px
-    font-weight: 800
+//triangle
+=arr($width, $height, $bg, $direction)
+  width: 0px
+  height: 0px
+  border-style: solid
+  @if $direction == t
+    border-width: 0 $width / 2 + px $height + px $width / 2 + px
+    border-color: transparent transparent $bg transparent
+  @if $direction == r
+    border-width: $height / 2 + px 0 $height / 2 + px $width + px
+    border-color: transparent transparent transparent $bg
+  @if $direction == b
+    border-width: $height + px $width / 2 + px 0 $width / 2 + px
+    border-color: $bg transparent transparent transparent
+  @if $direction == l
+    border-width: $height / 2 + px $width + px $height / 2 + px 0
+    border-color: transparent $bg transparent transparent
+  @if $direction == tl
+    border-width: $height + px $width + px 0 0
+    border-color: $bg transparent transparent transparent
+  @if $direction == tr
+    border-width: 0 $width + px $height + px 0
+    border-color: transparent $bg transparent transparent
+  @if $direction == br
+    border-width: 0 0 $height + px $width + px
+    border-color: transparent transparent $bg transparent
+  @if $direction == bl
+    border-width: $width + px 0 0 $height + px
+    border-color: transparent transparent transparent $bg
+// example
+// +arr(500,50, #000, l)
+// +arr(500,50, #000, bl)
 
-=caption
-    font-size: 14px
-    line-height: 27px
+// hack for fancybox sass
+@function max($numbers...)
+  @return m#{a}x(#{$numbers})
 
-=caption2
-    font-size: 12px
-    line-height: 14px
-    letter-spacing: .05em
-    font-weight: 800
+@function min($numbers...)
+  @return m#{i}n(#{$numbers})
 
-=hairline
-    font-size: 10px
-    line-height: 12px
-    font-weight: 800
-    letter-spacing: .02em
-
-=quote
-    +inter
-    font-size: 32px
-    line-height: 42px
-    font-weight: 900
-    +t
-        font-size: 24px
-        line-height: 36px
-    +m
-        font-size: 32px
-        line-height: 42px

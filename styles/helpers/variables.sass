@@ -24,9 +24,12 @@
     @media only screen and (max-width: "474px")
         @content
 
-=r($width)
-    @media only screen and (max-width: $width+ "px")
-        @content
+// fonts
+=inter
+    font-family: "Inter", sans-serif
+
+=karla
+    font-family: "Karla", sans-serif
 
 // colors neutral
 $n0: #FFFFFF
@@ -41,10 +44,10 @@ $n8: #151515
 $n9: #101010
 
 // colors
-$c1: #EB5BE5
+$c1: #289B98
 $c1s1: #E87A95
-$c1s2: #362535
-$c1s3: rgba(#EB5BE5, .05)
+$c1s2: #1B5555
+$c1s3: rgba(#289B98, .05)
 $c1s4: #1D181D
 $c1s5: #1A171A
 
@@ -56,4 +59,68 @@ $c3s2: rgba(#EBB15B, .05)
 
 $c4s1: #6F5BEB
 $c4s2: rgba(#6F5BEB, .05)
+
+// typography
+=body1
+    font-size: 24px
+    line-height: 36px
+
+=body2
+    font-size: 18px
+    line-height: 27px
+
+=tagline
+    font-size: 18px
+    line-height: 21px
+    letter-spacing: .05em
+    font-weight: 800
+    text-transform: uppercase
+
+=button
+    font-size: 14px
+    line-height: 16px
+    font-weight: 800
+    text-transform: uppercase
+
+=text-button
+    font-size: 18px
+    line-height: 27px
+    font-weight: 500
+
+=base
+    font-size: 16px
+    line-height: 19px
+
+=baseB
+    font-size: 16px
+    line-height: 19px
+    font-weight: 800
+
+=caption
+    font-size: 14px
+    line-height: 27px
+
+=caption2
+    font-size: 12px
+    line-height: 14px
+    letter-spacing: .05em
+    font-weight: 800
+
+=hairline
+    font-size: 10px
+    line-height: 12px
+    font-weight: 800
+    letter-spacing: .02em
+
+=quote
+    +inter
+    font-size: 32px
+    line-height: 42px
+    font-weight: 900
+    +t
+        font-size: 24px
+        line-height: 36px
+    +m
+        font-size: 32px
+        line-height: 42px
 

@@ -14,8 +14,6 @@ const ContactPage = () => {
         <Layout>
             <Main scrollToRef={scrollToRef} />
             <Details scrollToRef={scrollToRef} />
-            <Reviews reviews={reviews} />
-            <JoinCommunity title="Want to get involved?" />
         </Layout>
     );
 };

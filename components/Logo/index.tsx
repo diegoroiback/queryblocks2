@@ -13,8 +13,8 @@ const Logo = ({ className, onClick }: LogoProps) => (
         <a className={cn(styles.logo, className)} onClick={onClick}>
             <Image
                 src="/images/logo.svg"
-                width={90}
-                height={24}
+                width={190}
+                height={40}
                 alt="Onix"
                 priority
             />
