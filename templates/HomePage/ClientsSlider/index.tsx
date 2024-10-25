@@ -1,6 +1,5 @@
-import React, { useEffect, useState, useRef } from 'react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-
+import React, { useEffect, useState } from 'react';
+import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -10,13 +9,15 @@ import cn from "classnames";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { clientslider } from "@/mocks/clientslider";
+import type { Swiper as SwiperType } from 'swiper';
 
 type ClientsSliderProps = {};
 
 const ClientsSlider = ({}: ClientsSliderProps) => {
-    const [currentSlide, setCurrentSlide] = useState(1)
+    const [currentSlide, setCurrentSlide] = useState(1);
+
     useEffect(() => {
-        AOS.init({ duration: 1000, once: true });
+        AOS.init({ duration: 1000 });
     }, []);
 
     return (
@@ -25,7 +26,7 @@ const ClientsSlider = ({}: ClientsSliderProps) => {
                 <div className={styles.head} data-aos="fade-right">
                     <div className={styles.titles}>
                         <div className={cn("h2", styles.title)}>
-                            Here’s whatour <br />clients say
+                            Here’s what our <br />clients say
                         </div>
                     </div>
                     <div className={styles.info} data-aos="fade-left">
@@ -40,7 +41,7 @@ const ClientsSlider = ({}: ClientsSliderProps) => {
                     spaceBetween={20}
                     navigation
                     pagination={{
-                        type: 'progressbar'
+                        type: 'progressbar',
                     }}
                     breakpoints={{
                         0: {
@@ -53,7 +54,7 @@ const ClientsSlider = ({}: ClientsSliderProps) => {
                             slidesPerView: 3,
                         },
                     }}
-                    onSlideChange={(swiper) => setCurrentSlide(swiper.realIndex + 1)}
+                    onSlideChange={(swiper: SwiperType) => setCurrentSlide(swiper.realIndex + 1)}
                 >
                     {clientslider.map((item, index) => (
                         <SwiperSlide key={index}>
