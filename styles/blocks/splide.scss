@@ -1,0 +1,41 @@
+.swiper {
+  overflow-y: visible !important;
+  display: flex !important;
+  flex-direction: column;
+
+  &-pagination-progressbar {
+    position: relative !important;
+    margin-top: 5px;
+    max-width: 120px;
+    order: 2;
+  }
+
+  &-counter {
+    color: #585858;
+    font-family: "Karla", sans-serif;
+    margin-top: 50px;
+  }
+
+  &-button {
+    z-index: 4;
+
+    &-next,
+    &-prev {
+      background: url('../../public/images/arrow.svg');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center center;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &-prev {
+      transform: scale(-1);
+      left: inherit !important;
+      right: 40px !important;
+      margin-top: -1px;
+    }
+  }
+}

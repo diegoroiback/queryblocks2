@@ -1,0 +1,103 @@
+@import @/styles/helpers
+
+.wrapper
+    padding-top: 100px
+
+.head
+    display: flex
+    flex-wrap: wrap
+    margin: 0 auto 80px
+    text-align: center
+    align-items: flex-start
+    justify-content: space-between
+    +t
+        justify-content: center
+    +m
+        max-width: 100%
+        margin-bottom: 64px
+        text-align: left
+.title
+    +karla
+    color: $n2
+    font-size: 60px
+    text-align: left
+    margin-bottom: 24px
+    +t
+        text-align: center
+        width: 100%
+    +s
+        font-size: 35px
+
+.subtitle
+    color: $n2
+    text-align: left
+    margin-bottom: 24px
+    +t
+        text-align: center
+
+.link
+    +link
+    margin-top: 10px
+    +t
+        margin-top: 24px
+
+.titles
+    width: 67%
+    +t
+        width: 100%
+
+.list
+    display: block
+    border-top: 1px solid $n4
+    width: 100%
+
+
+.item
+    display: flex
+    align-items: center
+    padding: 100px 150px
+    border-bottom: 1px solid $n4
+    justify-content: space-between
+    transition: padding .5s, background .5s
+    background: $n8
+    gap: 20px
+    flex-wrap: wrap
+    &:hover
+        background: $n7
+        padding-bottom: 120px
+        padding-top: 120px
+    +d
+        padding-left: 50px
+        padding-right: 50px
+    +s
+        padding-left: 20px
+        padding-right: 20px
+
+.content
+    width: 21%
+
+.name
+    font-size: 40px
+    margin-top: 10px
+    +d
+        width: 100%
+
+.text
+    width: 35%
+    +d
+        width: 100%
+
+.tags
+    width: 40%
+    display: flex
+    justify-content: flex-end
+    gap: 7px
+    flex-wrap: wrap
+    +d
+        width: 100%
+        justify-content: flex-start
+
+.tag
+    border: 1px solid $n2
+    padding: 4px 10px
+    border-radius: 8px

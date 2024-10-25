@@ -1,0 +1,56 @@
+@import @/styles/helpers
+
+.section
+    padding: 100px 0
+    border-bottom: 1px solid $n4
+    margin: 0
+.head
+    display: flex
+    flex-wrap: wrap
+    margin: 0 auto 80px
+    text-align: center
+    align-items: flex-start
+    justify-content: space-between
+    +t
+        justify-content: center
+    +m
+        max-width: 100%
+        margin-bottom: 64px
+        text-align: left
+.title
+    text-align: left
+    margin-bottom: 24px
+    +t
+        text-align: center
+        width: 100%
+.subtitle
+    color: $n2
+    text-align: left
+    margin-bottom: 24px
+    +t
+        text-align: center
+
+.link
+    +link
+    margin-top: 10px
+    +t
+        margin-top: 24px
+
+.titles
+    width: 68%
+    +t
+        width: 100%
+
+.list
+    display: flex
+    gap: 20px
+    height: 100vh
+
+.item
+    display: flex
+    width: 40vw
+
+.img
+    min-width: 40vw
+    height: 80vh
+    object-fit: cover

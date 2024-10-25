@@ -1,0 +1,70 @@
+@import @/styles/helpers
+
+.wrapper
+    padding: 100px 0
+    border-bottom: 1px solid $n4
+
+.head
+    display: flex
+    flex-wrap: wrap
+    margin: 0 auto 80px
+    text-align: center
+    align-items: flex-start
+    justify-content: space-between
+    +t
+        justify-content: center
+    +m
+        max-width: 100%
+        margin-bottom: 64px
+        text-align: left
+.title
+    +karla
+    color: $n2
+    font-size: 60px
+    text-align: left
+    margin-bottom: 24px
+    +t
+        text-align: center
+        width: 100%
+    +s
+        font-size: 35px
+
+.subtitle
+    color: $n2
+    text-align: left
+    margin-bottom: 24px
+    +t
+        text-align: center
+
+.link
+    +link
+    margin-top: 10px
+    +t
+        margin-top: 24px
+
+.titles
+    width: 68%
+    +t
+        width: 100%
+
+.list
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+
+.item
+    width: 25%
+    border: 1px solid $n2
+    padding: 40px 20px
+    &:first-child
+    +d
+        width: 50%
+    +s
+        width: 100%
+
+.name
+    margin-bottom: 10px
+    line-height: 1
+    font-size: 58px
+    +t
+        font-size: 50px
