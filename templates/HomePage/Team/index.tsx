@@ -17,12 +17,15 @@ const Team = ({}: TeamProps) => {
         <div className={cn("section", styles.section)}>
             <div className={cn("container", styles.container)}>
                 <div className={styles.head}>
-                    <div className={cn("h3", styles.subtitle)}>
-                        Meet the Onix team
+                    <div className={styles.titles}>
+                        <div className={cn("h2", styles.title)}>
+                            Built by developers, for&nbsp;developers.
+                        </div>
+                        <div className={cn("p", styles.subtitle)}>
+                            Meet the Query Blocks team
+                        </div>
                     </div>
-                    <div className={cn("h2", styles.title)}>
-                        Built by developers, for&nbsp;developers.
-                    </div>
+                    <a className={styles.link}>See who we are</a>
                 </div>
                 <div className={styles.list}>
                     {team.map((man, index) => (
@@ -36,7 +39,7 @@ const Team = ({}: TeamProps) => {
                             <div
                                 className={styles.square}
                                 style={{
-                                    backgroundColor: man.color || "#89EB5B",
+                                    backgroundColor: "#2EB4B0",
                                 }}
                             ></div>
                             <div className={styles.photo}>

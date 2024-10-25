@@ -1,19 +1,45 @@
 @import @/styles/helpers
 
+.section
+    padding: 100px 0
+    border-bottom: 1px solid $n4
+    margin: 0
 .head
-    max-width: 578px
+    display: flex
+    flex-wrap: wrap
     margin: 0 auto 80px
     text-align: center
+    align-items: flex-start
+    justify-content: space-between
     +t
-        max-width: 500px
+        justify-content: center
     +m
         max-width: 100%
         margin-bottom: 64px
         text-align: left
-
-.subtitle
+.title
+    text-align: left
     margin-bottom: 24px
-    color: $n4
+    +t
+        text-align: center
+        width: 100%
+.subtitle
+    color: $n2
+    text-align: left
+    margin-bottom: 24px
+    +t
+        text-align: center
+
+.link
+    +link
+    margin-top: 10px
+    +t
+        margin-top: 24px
+
+.titles
+    width: 68%
+    +t
+        width: 100%
 
 .list
     display: flex
@@ -53,6 +79,15 @@
     &:hover
         img
             filter: grayscale(0)
+        .square
+            background: $n0 !important
+            filter: blur(2px)
+        .photo,
+        .details
+            background: #333437
+        .inner
+            img
+                transform: translateY(0)
 
 .square
     position: absolute
@@ -60,12 +95,15 @@
     right: 8px
     width: 60px
     height: 60px
+    transition: all .5s
     border-radius: 16px
+    filter: blur(0)
 
 .photo
     padding: 8px
     border-top-left-radius: 24px
     background: $n6
+    transition: background .5s
     clip-path: url(#polygonPhoto)
     img
         filter: grayscale(100)
@@ -80,11 +118,20 @@
     border-radius: 18px
     overflow: hidden
     clip-path: url(#polygonPhoto)
+    img
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        object-fit: cover
+        transform: translateY(15px)
 
 .details
     flex-grow: 1
     padding: 32px 32px 40px
     background: $n6
+    transition: background .5s
     border-radius: 0 0 24px 24px
     +t
         padding: 40px 32px 32px

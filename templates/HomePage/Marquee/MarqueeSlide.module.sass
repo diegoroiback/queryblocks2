@@ -1,0 +1,52 @@
+@import @/styles/helpers
+
+.wrapper
+    padding: 100px 0
+    border-bottom: 1px solid $n4
+
+.list
+    display: inline-block
+    gap: 50px
+    margin: auto
+    box-sizing: border-box
+
+
+.item
+    display: flex
+    align-items: center
+
+.title
+    +inter
+    color: $n2
+    font-size: 96px
+    +t
+        font-size: 60px
+    +s
+        font-size: 35px
+
+.figure
+    position: relative
+    width: 10px
+    height: 10px
+    background-color: #64C7CC
+    margin: 0 25px
+    left: 0
+    &:before,
+    &:after
+        content: ""
+        position: absolute
+        height: 0
+        border-bottom: 5px solid transparent
+        border-top: 5px solid transparent
+
+    &:before
+        left: 100%
+        border-left: 5px solid #64C7CC
+
+    &:after
+        right: 100%
+        width: 0
+        border-right: 5px solid #64C7CC
+
+
+

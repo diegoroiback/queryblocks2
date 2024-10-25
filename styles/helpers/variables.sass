@@ -82,6 +82,35 @@ $c4s2: rgba(#6F5BEB, .05)
     font-weight: 800
     text-transform: uppercase
 
+=link
+    +karla
+    font-size: 24px
+    line-height: 26px
+    color: $c1
+    padding-left: 13px
+    position: relative
+    transition: padding .5s
+    display: inline-block
+    cursor: pointer
+    &::before
+        content: ''
+        width: 10px
+        height: 1px
+        background: $c1
+        position: absolute
+        bottom: 0
+        transition: width .5s
+        left: 0
+    &::after
+        content: '>>'
+        transition: margin .5s
+        margin-left: 4px
+    &:hover
+        &::before
+            width: 83%
+        &::after
+            margin-left: 12px
+
 =text-button
     font-size: 18px
     line-height: 27px

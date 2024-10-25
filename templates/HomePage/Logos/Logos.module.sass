@@ -1,0 +1,27 @@
+@import @/styles/helpers
+
+.wrapper
+    padding: 100px 30px
+    border-bottom: 1px solid $n4
+
+.list
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    gap: 50px
+    align-items: center
+    margin: auto
+    max-width: 900px
+    +w
+        flex-wrap: wrap
+        max-width: 700px
+
+.item
+    display: inline-block
+
+.title
+    color: $n5
+    +w
+        margin-right: -16px
+    +m
+        margin-right: 0
