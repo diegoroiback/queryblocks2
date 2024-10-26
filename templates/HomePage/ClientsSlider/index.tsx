@@ -15,9 +15,24 @@ type ClientsSliderProps = {};
 
 const ClientsSlider = ({}: ClientsSliderProps) => {
     const [currentSlide, setCurrentSlide] = useState(1);
+    const [itemsPaginator, setItemsPaginator] = useState(0);
 
     useEffect(() => {
         AOS.init({ duration: 1000 });
+
+        const handleResize = () => {
+            const width = window.innerWidth;
+            if (width > 1000) {
+                setCurrentSlide(3);
+                setItemsPaginator(2);
+            } if (width < 1000 && width > 500) {
+                setCurrentSlide(2);
+                setItemsPaginator(1);
+            }
+        }
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
     }, []);
 
     return (
@@ -54,7 +69,7 @@ const ClientsSlider = ({}: ClientsSliderProps) => {
                             slidesPerView: 3,
                         },
                     }}
-                    onSlideChange={(swiper: SwiperType) => setCurrentSlide(swiper.realIndex + 1)}
+                    onSlideChange={(swiper: SwiperType) => setCurrentSlide(swiper.realIndex + itemsPaginator + 1)}
                 >
                     {clientslider.map((item, index) => (
                         <SwiperSlide key={index}>

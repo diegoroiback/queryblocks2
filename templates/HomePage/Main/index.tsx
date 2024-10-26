@@ -17,9 +17,9 @@ const Main = ({ scrollToRef }: MainProps) => {
     <div className={cn("section", styles.section)}>
         <div className={cn("container", styles.container)}>
             <div className={styles.wrap}>
-                <div className={cn("h1", styles.title)} data-aos="fade-up">Transforming ideas into digital successes</div>
+                <div className={cn("h1", styles.title)} data-aos="fade-up">Transforming ideas into digital success</div>
                 <div className={styles.info} data-aos="fade-left">
-                    <p>Ideate, design, and develop powerful software. Leap into the future with a team trusted by the world’s biggest brands.</p>
+                    <p className='p'>Ideate, design, and develop powerful software. Leap into the future with a team trusted by the world’s biggest brands.</p>
                     <a href="" className={styles.link}>See more</a>
                 </div>
             </div>

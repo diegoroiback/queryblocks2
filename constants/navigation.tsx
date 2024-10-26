@@ -4,8 +4,12 @@ export const headerNavigation = [
         url: "/",
     },
     {
-        title: "About us",
-        url: "/about-us",
+        title: "Projects",
+        url: "#projects",
+    },
+    {
+        title: "Technology",
+        url: "#projects",
     },
     {
         title: "Community",
@@ -13,16 +17,16 @@ export const headerNavigation = [
         external: true,
     },
     {
-        title: "Blog",
+        title: "Projects",
         url: "/blog",
     },
     {
-        title: "Technology",
+        title: "Services",
         url: "/technology",
     },
     {
-        title: "Careers",
-        url: "/careers",
+        title: "Contact",
+        url: "/contact",
     },
 ];
 

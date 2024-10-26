@@ -1,6 +1,7 @@
 @import @/styles/helpers
 
 .section
+    background: #030303
     position: relative
     border-bottom: 1px solid $n4
     padding-top: 65vh
@@ -8,11 +9,13 @@
     margin: 0
     overflow: hidden
     +w
-        padding-top: 390px
-    +m
-        padding-top: 200px
+        padding-top: 50vh
+    +s
+        padding-top: 40vh
 
 .container
+    z-index: 2
+
     +w
         padding: 0 142px
     +d
@@ -29,7 +32,6 @@
         max-width: 600px
     +m
         margin: 0 auto
-        text-align: center
 
 .scroll
     +m
@@ -45,9 +47,7 @@
     color: $n5
 
 .title
-    +karla
     margin-bottom: 20px
-    font-size: 76px
     width: 67%
     padding-right: 3rem
     +d
@@ -113,8 +113,7 @@
     pointer-events: none
     -o-object-fit: cover
     object-fit: cover
-    mix-blend-mode: lighten
     position: absolute
     left: 0
     top: 0
-    z-index: -1
+    z-index: 1

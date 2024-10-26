@@ -6,15 +6,12 @@
     left: 0
     right: 0
     z-index: 30
-    padding: 30px 0
+    padding: 20px 0
     transition: all .2s
-    +m
-        padding: 24px 0
     &.visible
-        padding: 32px 0
         overflow: hidden
         &::before
-            background: linear-gradient(176deg, rgba(200,244,238,0.3) 0%, rgba(171,222,216,0.05) 100%)
+            background: linear-gradient(176deg, rgb(160 213 204 / 50%) 0%, rgb(21 21 21 / 95%) 100%)
             content: ''
             position: absolute
             left: -5%
@@ -26,6 +23,9 @@
             padding: 24px 0
         +m
             padding: 20px 0
+        &>div>div
+            padding-bottom: 0
+            border-bottom: 0
     &.open.visible
         background: transparent
 
