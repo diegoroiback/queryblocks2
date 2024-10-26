@@ -27,7 +27,9 @@ const Main = ({ scrollToRef }: MainProps) => {
                 <video className={styles.video} width="1920"
                     autoPlay
                     muted
-                    loop>
+                    loop
+                    playsInline
+                    preload='auto'>
                     <source src="/videos/video-queryblocks.webm" type="video/webm" />
                     <source src="/videos/video-queryblocks.mp4" type="video/mp4" />
                     Tu navegador no soporta la etiqueta de video.
