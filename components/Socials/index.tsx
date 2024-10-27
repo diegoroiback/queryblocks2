@@ -1,45 +1,22 @@
 import cn from "classnames";
 import styles from "./Socials.module.sass";
-import Icon from "@/components/Icon";
+import { FaBehance, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 
-type SocialsType = {
-    icon: string;
-    href: string;
-};
-
-type SocialsProps = {
-    className?: string;
-    socialClassName?: string;
-    socials: SocialsType[];
-    dark?: boolean;
-    large?: boolean;
-};
-
-const Socials = ({
-    className,
-    socialClassName,
-    socials,
-    dark,
-    large,
-}: SocialsProps) => (
-    <div
-        className={cn(
-            styles.socials,
-            { [styles.dark]: dark, [styles.large]: large },
-            className
-        )}
-    >
-        {socials.map((social, index) => (
-            <a
-                className={cn(styles.social, socialClassName)}
-                href={social.href}
-                target="_blank"
-                rel="noreferrer"
-                key={index}
-            >
-                <Icon name={social.icon} />
-            </a>
-        ))}
+const Socials = () => (
+    <div className={styles.social}>
+        <p className={styles.title}>Follow us:</p>
+        <div className={cn(styles.socials)}>
+            <a href="" className={styles.icon}><FaBehance /></a>
+        </div>
+        <div className={cn(styles.socials)}>
+            <a href="" className={styles.icon}><FaLinkedin /></a>
+        </div>
+        <div className={cn(styles.socials)}>
+            <a href="" className={styles.icon}><FaFacebook /></a>
+        </div>
+        <div className={cn(styles.socials)}>
+            <a href="" className={styles.icon}><FaInstagram /></a>
+        </div>
     </div>
 );
 

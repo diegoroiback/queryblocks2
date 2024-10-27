@@ -1,7 +1,7 @@
 @import @/styles/helpers
 
 .footer
-    padding: 102px 0 64px
+    padding: 102px 0 50px
     background: $n9
     +t
         position: relative
@@ -16,11 +16,10 @@
 .row
     display: flex
     align-items: center
-    +t
-        display: block
+    flex-wrap: wrap
+    gap: 30px
     +m
-        display: flex
-        flex-direction: column-reverse
+        flex-direction: column
         align-items: stretch
     &:not(:last-child)
         margin-bottom: 150px
@@ -30,26 +29,56 @@
             margin-bottom: 40px
 
 .logo
-    margin-right: auto
+    width: 100%
+    margin-bottom: 80px
+    +t
+        margin-bottom: 20px
 
 .menu
     display: flex
-    +t
-        display: none
+    width: 100%
+    flex-wrap: wrap
+    gap: 50px 0
+    justify-content: space-between
+    div
+        +t
+            width: 50%
+        +s
+            width: 100%
+
+.categorie_title
+    font-weight: 500
+    color: $n1
+    margin-bottom: 7px
+
+.list
+    display: flex
+    flex-direction: column
+    gap: 10px
+
+.list_2
+    margin-bottom: 23px
 
 .link
     +baseB
-    color: $n1
+    color: $n3
     transition: color .2s
+    font-weight: 400
     &:hover,
     &.active
         color: $c1
     &:not(:last-child)
         margin-right: 48px
 
+.lower
+    margin-top: 61px
+    border-top: 1px solid $n4
+    padding-top: 23px
+
 .copyright
     margin-right: 48px
-    color: $n5
+    font-size: 14px
+    color: $n3
     +t
         margin-right: 0
     +m
@@ -57,15 +86,15 @@
 
 .documents
     display: flex
+    flex-wrap: wrap
     margin-right: auto
-    +d
-        display: none
 
 .document
-    color: $c1
+    color: $n3
     transition: color .2s
+    font-size: 14px
     &:hover
-        color: $c1s1
+        color: $c1
     &:not(:last-child)
         margin-right: 48px
 

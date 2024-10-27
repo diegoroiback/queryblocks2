@@ -5,7 +5,6 @@ import styles from "./Details.module.sass";
 import Form from "../Form";
 import Socials from "@/components/Socials";
 
-import { socials } from "@/constants/socials";
 
 type DetailsProps = {
     scrollToRef: any;
@@ -60,7 +59,6 @@ const Details = ({ scrollToRef }: DetailsProps) => {
                         </div>
                         <Socials
                             socialClassName={styles.social}
-                            socials={socials}
                         />
                     </div>
                 </div>

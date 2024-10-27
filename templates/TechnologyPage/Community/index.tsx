@@ -2,8 +2,6 @@ import cn from "classnames";
 import styles from "./Community.module.sass";
 import Socials from "@/components/Socials";
 
-import { socials } from "@/constants/socials";
-
 const community = [
     {
         value: "$110M",
@@ -37,13 +35,7 @@ const Community = ({}: CommunityProps) => (
                             Stay current on the latest Onix project.
                         </div>
                     </div>
-                    <Socials
-                        className={styles.socials}
-                        socialClassName={styles.social}
-                        socials={socials}
-                        dark
-                        large
-                    />
+                    <Socials />
                 </div>
             </div>
             <div className={styles.list}>

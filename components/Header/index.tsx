@@ -6,7 +6,6 @@ import Logo from "@/components/Logo";
 import Menu from "./Menu";
 
 import { headerNavigation } from "@/constants/navigation";
-import { socials } from "@/constants/socials";
 
 type HeaderProps = {};
 
@@ -36,7 +35,6 @@ const Header = ({}: HeaderProps) => {
                 <Logo className={styles.logo} />
                 <Menu
                     navigation={headerNavigation}
-                    socials={socials}
                     onClick={() => setOpen(!open)}
                 />
             </div>
