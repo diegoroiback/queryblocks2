@@ -28,15 +28,15 @@ export const services = [
         url: "#",
         tags: [
             {
-                title: 'Mobile',
+                title: 'UX',
                 url: '#'
             },
             {
-                title: 'Web',
+                title: 'UI',
                 url: '#'
             },
             {
-                title: 'Web extension',
+                title: 'UX Audits',
                 url: '#'
             },
             {

@@ -55,28 +55,26 @@ const Menu = ({ navigation, socials, onClick }: MenuProps) => {
             >
                 <span></span>
                 <span></span>
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="40"
-                    height="40"
-                    fill="none"
-                    viewBox="0 0 40 40"
-                >
-                    <mask id="A" fill="#fff">
-                        <path d="M12.799.586A2 2 0 0 1 14.213 0H38a2 2 0 0 1 2 2v36a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V14.213a2 2 0 0 1 .586-1.414L12.799.586z" />
-                    </mask>
-                    <path
-                        d="M.586 12.799l-1.414-1.414 1.414 1.414zM38 2H14.213v-4H38v4zm0 36V2h4v36h-4zM2 38h36v4H2v-4zm0-23.787V38h-4V14.213h4zm-2.828-2.828L11.385-.828 14.213 2 2 14.213-.828 11.385zM-2 14.213a4 4 0 0 1 1.172-2.828L2 14.213h-4zM2 42a4 4 0 0 1-4-4h4v4zm40-4a4 4 0 0 1-4 4v-4h0 4zM14.213 2h0L11.385-.828A4 4 0 0 1 14.213-2v4zM38-2a4 4 0 0 1 4 4h-4 0v-4z"
-                        fill="#fff"
-                        mask="url(#A)"
-                    />
+                <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M27.3402 0.5858C26.9651 0.2107 26.4564 0 25.926 0H2.1392C1.0346 0 0.1392 0.8954 0.1392 2V38C0.1392 39.1046 1.0346 40 2.1392 40H38.1392C39.2437 40 40.1392 39.1046 40.1392 38V14.2132C40.1392 13.6828 39.9284 13.1741 39.5534 12.799L27.3402 0.5858Z" fill="url(#paint0_linear_106_7)"/>
+                    <path d="M25.926 1C26.1912 1 26.4455 1.1054 26.6331 1.2929L38.8463 13.5061C39.0338 13.6936 39.1392 13.948 39.1392 14.2132V38C39.1392 38.5523 38.6914 39 38.1392 39H2.1392C1.5869 39 1.1392 38.5523 1.1392 38V2C1.1392 1.4477 1.5869 1 2.1392 1H25.926Z" stroke="url(#paint1_linear_106_7)" stopOpacity="0.3" strokeWidth="2"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_106_7" x1="1.394" y1="-4.29806" x2="24.4238" y2="50.4083" gradientUnits="userSpaceOnUse">
+                    <stop stopColor="#C8F4EE" strokeOpacity="0.3"/>
+                    <stop offset="0.922063" stopColor="#ABDED8" strokeOpacity="0.05"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_106_7" x1="5.9949" y1="2.60137e-08" x2="18.0406" y2="44.5344" gradientUnits="userSpaceOnUse">
+                    <stop stopColor="white"/>
+                    <stop offset="1" stopColor="white" strokeOpacity="0"/>
+                    </linearGradient>
+                    </defs>
                 </svg>
             </button>
             <div className={styles.main_nav}>
                 <NavLink
                     className={styles.link2}
                     href='/contact'>
-                    Contacto
+                    Contact us
                 </NavLink>
             </div>
             {loaded

@@ -25,10 +25,10 @@ const Results = ({}: ResultsProps) => {
                 <div className={styles.head} data-aos="fade-up">
                     <div className={styles.titles}>
                         <div className={cn("h2", styles.title)}>
-                            Tangible results,right on schedule
+                            Tangible results, right on schedule
                         </div>
                     </div>
-                    <a className={styles.link}>Learn more</a>
+                    <a className={styles.link}>See our portfolio</a>
                 </div>
                 <div className={styles.list}>
                     {results.map((item, index) => (

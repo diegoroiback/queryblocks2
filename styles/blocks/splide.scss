@@ -2,18 +2,20 @@
   overflow-y: visible !important;
   display: flex !important;
   flex-direction: column;
+  padding: 15px !important;
 
   &-pagination-progressbar {
     position: relative !important;
     margin-top: 5px;
-    max-width: 120px;
+    max-width: 160px;
     order: 2;
   }
 
   &-counter {
     color: #585858;
-    font-family: "Karla", sans-serif;
-    margin-top: 50px;
+    font-family: "Roboto Mono", sans-serif;
+    font-weight: 500;
+    margin-top: 60px;
   }
 
   &-button {
@@ -34,7 +36,7 @@
     &-prev {
       transform: scale(-1);
       left: inherit !important;
-      right: 40px !important;
+      right: 45px !important;
     }
   }
 }

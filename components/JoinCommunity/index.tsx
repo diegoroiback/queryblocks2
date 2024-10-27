@@ -43,7 +43,7 @@ const JoinCommunity = () => {
             <div className={cn("container", styles.container)}>
                 <div className={styles.wrap}>
                     <div className={cn("h2", styles.title)}>Be part of our success stories.</div>
-                    <div className={cn("h3", styles.title)}>We can make it happen!</div>
+                    <div className={cn("h3", styles.subtitle)}>We can make it happen!</div>
                     <div className={styles.info}>
                         <a
                             className={styles.social}

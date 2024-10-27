@@ -15,7 +15,7 @@
 .title
     color: $n2
     text-align: left
-    margin-bottom: 5px
+    margin-bottom: 10px
     +t
         width: 100%
 
@@ -45,7 +45,7 @@
 .item
     display: flex
     align-items: center
-    padding: 100px 150px
+    padding: 68px 142px
     border-bottom: 1px solid $n4
     justify-content: space-between
     transition: padding .5s, background .5s
@@ -54,8 +54,8 @@
     flex-wrap: wrap
     &:hover
         background: $n7
-        padding-bottom: 120px
-        padding-top: 120px
+        padding-bottom: 80px
+        padding-top: 80px
     +d
         padding-left: 50px
         padding-right: 50px
@@ -64,7 +64,9 @@
         padding-right: 20px
 
 .content
-    width: 21%
+    width: 16%
+    +d
+        width: 100%
 
 .position
     +roboto
@@ -77,6 +79,7 @@
 
 .text
     width: 35%
+    padding-top: 24px
     +d
         width: 100%
 
@@ -89,10 +92,14 @@
     +d
         width: 100%
         justify-content: flex-start
+    &>div:last-child
+        .tag
+            +roboto
 
 .tag
     border: 1px solid $n2
     padding: 4px 10px
+    font-size: 16px
     border-radius: 8px
     background-color: $n8
     &:hover

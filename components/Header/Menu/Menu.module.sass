@@ -18,7 +18,6 @@
         right: 3px
         bottom: 3px
         border-radius: 1px
-        background: linear-gradient(176deg, rgba(200,244,238,0.3) 0%, rgba(171,222,216,0.05) 100%)
         transition: background .5s
     span
         position: relative
@@ -40,8 +39,6 @@
         &:nth-child(2)
             transform: translateY(-5px) rotate(-45deg)
     &:hover
-        &:before
-            background: linear-gradient(176deg, rgba(200,244,238,0.6) 0%, rgba(171,222,216,0.2) 100%)
         svg
             opacity: .8
     &.active
@@ -55,9 +52,9 @@
         left: 0
         width: 100%
         height: 100%
-        opacity: .5
-        transform: scale(-1, 1)
-        transition: opacity .5s
+        box-shadow: 0 5px 19px 0px rgba(0,0,0,0.24)
+        -webkit-box-shadow: 0 5px 19px 0px rgba(0,0,0,0.24)
+        -moz-box-shadow: 0 5px 19px 0px rgba(0,0,0,0.24)
 
 .menu
     position: fixed
@@ -74,9 +71,11 @@
 .main_nav
     display: flex
     align-items: center
-    border-left: 1px solid $n3
+    border-left: 1px solid #80808082
     padding: 15px 0 15px 25px
     margin-left: 25px
+    +s
+        display: none
 
 .link2
     +link
@@ -111,7 +110,11 @@
     flex-wrap: wrap
     margin: auto 0
     padding-bottom: 10px
-    border-bottom: 1px solid $n3
+    border-bottom: 1px solid #80808082
+    +s
+        padding-bottom: 0
+        border-bottom: 0
+
 
 .link
     flex: 0 0 50%

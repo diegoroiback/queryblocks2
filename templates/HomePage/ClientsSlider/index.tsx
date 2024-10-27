@@ -48,7 +48,7 @@ const ClientsSlider = ({}: ClientsSliderProps) => {
                         <p className={styles.paragraph}>
                             Top-notch software, award-winning design, revolutionary mobile apps. Listen to our clients and discover what’s possible for you.
                         </p>
-                        <a className={styles.link}>Learn more</a>
+                        <a className={styles.link}>See case studies</a>
                     </div>
                 </div>
                 <Swiper
@@ -89,7 +89,7 @@ const ClientsSlider = ({}: ClientsSliderProps) => {
                         </SwiperSlide>
                     ))}
                     <div className="swiper-counter">
-                        {currentSlide} / {clientslider.length}
+                        {currentSlide} of {clientslider.length}
                     </div>
                 </Swiper>
             </div>

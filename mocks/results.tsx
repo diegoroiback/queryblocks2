@@ -1,24 +1,24 @@
 export const results = [
     {
-        before: "+",
+        before: "+ ",
         number: 4,
         after: " years",
         text: "Of experience developing projects"
     },
     {
-        before: "+",
+        before: "+ ",
         number: 20,
         after: "",
         text: "Ideas taken into reality"
     },
     {
-        before: "+",
+        before: "+ ",
         number: 14,
         after: "",
         text: "Experts dedicated to the projects"
     },
     {
-        before: "+",
+        before: "",
         number: 5,
         after: "/5",
         text: "Projects from referrals"
