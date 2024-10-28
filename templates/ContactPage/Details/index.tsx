@@ -57,9 +57,7 @@ const Details = ({ scrollToRef }: DetailsProps) => {
                                 </a>
                             </Link>
                         </div>
-                        <Socials
-                            socialClassName={styles.social}
-                        />
+                        <Socials />
                     </div>
                 </div>
             </div>

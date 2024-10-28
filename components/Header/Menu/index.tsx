@@ -17,11 +17,10 @@ type NavigationType = {
 
 type MenuProps = {
     navigation: NavigationType[];
-    socials: any;
     onClick: () => void;
 };
 
-const Menu = ({ navigation, socials, onClick }: MenuProps) => {
+const Menu = ({ navigation, onClick }: MenuProps) => {
     const [visible, setVisible] = useState<boolean>(false);
     const [loaded, setLoaded] = useState<boolean>(false);
 
@@ -131,10 +130,7 @@ const Menu = ({ navigation, socials, onClick }: MenuProps) => {
                                       )}
                                   </nav>
                                   <div className={styles.line}>
-                                      <Socials
-                                          className={styles.socials}
-                                          socials={socials}
-                                      />
+                                      <Socials />
                                       <div className={styles.details}>
                                           <div className={styles.note}>
                                               Email
