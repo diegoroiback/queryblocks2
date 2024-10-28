@@ -1,0 +1,40 @@
+import { useEffect } from 'react';
+import Sticky from "react-sticky-el";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import styles from "./Solution.module.sass";
+import Image from "@/components/Image";
+import cn from "classnames";
+
+type solutionProps = {};
+
+const Solution = ({}: solutionProps) => {
+    useEffect(() => {
+        AOS.init({ duration: 1000 });
+    }, []);
+
+    return (
+        <div className={styles.solution}>
+            <div className={cn("container", styles.container)}>
+                <div className={styles.image}>
+                    <Image className={styles.img}
+                        src='/images/projects/qmission.png'
+                        width={600}
+                        height={600}
+                        alt={'text'}
+                    />
+                </div>
+                <div className={styles.content}>
+                    <div className={cn("h2", styles.title)}>
+                        Q-Mission® creates a continuous cycle of growth, empowering your organization to strengthen its cybersecurity posture. Our all-in-one platform ensures you can learn, train, and operate at the highest level, every step of the way.
+                    </div>
+                    <div className={cn("p", styles.text)}>
+                        Q-Mission®UCP is a comprehensive platform designed to train the cybersecurity workforce, from learning to executing real-world operations. The platform combines continuous training, advanced simulations, and cyber operations to help organizations build and maintain a strong cybersecurity posture. With key modules such as TrainOps, DevOps, SecOps, and InfOps, Q-Mission®UCP allows both experts and beginners to face real cybersecurity challenges through simulations, operational practice, and controlled developments.
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Solution;

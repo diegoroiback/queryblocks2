@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import styles from "./Logos.module.sass";
 import { logos } from "@/mocks/logos";
+import Image from "@/components/Image";
 
 type logosProps = {};
 
@@ -20,6 +21,12 @@ const Logos = ({}: logosProps) => {
                             src={item.image}
                             alt={item.title}
                         />
+                        {/* <Image className={styles.img}
+                            src={item.image}
+                            width={138}
+                            height={50}
+                            alt={item.title}
+                        /> */}
                     </div>
                 ))}
             </div>

@@ -11,41 +11,43 @@ const Form = ({}: FormProps) => {
     const [message, setMessage] = useState<string>("");
 
     return (
-        <form
-            className={styles.form}
-            action=""
-            onSubmit={() => console.log("Submit")}
-        >
-            <div className={cn("h3", styles.title)}>Need some help?</div>
-            <div className={styles.fieldset}>
-                <Field
-                    className={styles.field}
-                    placeholder="Name"
-                    value={name}
-                    onChange={(e: any) => setName(e.target.value)}
-                    required
-                />
-                <Field
-                    className={styles.field}
-                    placeholder="Email"
-                    type="email"
-                    value={email}
-                    onChange={(e: any) => setEmail(e.target.value)}
-                    required
-                />
-                <Field
-                    className={styles.field}
-                    placeholder="Tell us about your concern"
-                    value={message}
-                    onChange={(e: any) => setMessage(e.target.value)}
-                    textarea
-                    required
-                />
-            </div>
-            <button className="button">
-                <span>contact us</span>
-            </button>
-        </form>
+        <div className={styles.form_content}>
+            <form
+                className={styles.form}
+                action=""
+                onSubmit={() => console.log("Submit")}
+            >
+                <div className={cn("h3", styles.title)}>Need some help?</div>
+                <div className={styles.fieldset}>
+                    <Field
+                        className={styles.field}
+                        placeholder="Name"
+                        value={name}
+                        onChange={(e: any) => setName(e.target.value)}
+                        required
+                    />
+                    <Field
+                        className={styles.field}
+                        placeholder="Email"
+                        type="email"
+                        value={email}
+                        onChange={(e: any) => setEmail(e.target.value)}
+                        required
+                    />
+                    <Field
+                        className={styles.field}
+                        placeholder="Tell us about your concern"
+                        value={message}
+                        onChange={(e: any) => setMessage(e.target.value)}
+                        textarea
+                        required
+                    />
+                </div>
+                <button className="button">
+                    <span>contact us</span>
+                </button>
+            </form>
+        </div>
     );
 };
 

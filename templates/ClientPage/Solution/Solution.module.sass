@@ -1,0 +1,40 @@
+@import @/styles/helpers
+
+.solution
+    background: $n0
+    padding: 100px 0
+
+.container
+    overflow: visible
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    flex-wrap: wrap
+    gap: 20px
+
+.image
+    width: 48%
+    z-index: 9
+    position: sticky
+    display: inline-block
+    top: 0
+    +t
+        width: 100%
+
+.content
+    width: 48%
+    display: inline-block
+    +t
+        width: 100%
+
+.title
+    color: $n6
+    font-size: 32px
+    line-height: 1.1
+    font-weight: 600
+    margin-bottom: 30px
+    +m
+        margin-right: 0
+
+.text
+    color: $n9

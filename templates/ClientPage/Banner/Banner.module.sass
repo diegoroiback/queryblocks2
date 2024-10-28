@@ -1,0 +1,46 @@
+@import @/styles/helpers
+
+.section
+    background: url('/images/bg-ideas.png')
+    background-size: 100%
+    background-attachment: fixed
+    position: relative
+    overflow: hidden
+    z-index: 1
+    +m
+        padding: 72px 0
+
+.container
+    display: flex
+    align-items: center
+    padding: 110px 0
+    max-width: 1123px
+
+.wrap
+    position: relative
+    z-index: 3
+    width: 100%
+    text-align: center
+
+.title
+    margin-bottom: 16px
+    font-size: 80px
+    line-height: 1.1
+    font-weight: 500
+
+.subtitle
+    margin-bottom: 16px
+    font-weight: 600
+
+.info
+    margin: 0 auto 25px
+    color: $n1
+    max-width: 800px
+    +m
+        max-width: 230px
+        margin: 0 auto 64px
+    a
+        color: $c1
+        transition: color .2s
+        &:hover
+            color: $c1s1

@@ -18,10 +18,10 @@ class MyDocument extends Document {
                 <Head>
                     <meta
                         content="Epic landing page UI Design Kit for Blockchain, Crypto"
-                        name="Onix Blockchain Landing Page UI Design Kit"
+                        name="Query Blocks"
                     />
                     <meta
-                        content="Onix Blockchain Landing Page UI Design Kit"
+                        content="Query Blocks"
                         property="og:title"
                     />
                     <meta
@@ -33,20 +33,8 @@ class MyDocument extends Document {
                         property="og:image"
                     />
                     <meta
-                        property="og:url"
-                        content="https://ui8.net/ui8/products/onix-blockchain-landing-page-ui-design-kit"
-                    />
-                    <meta
                         property="og:site_name"
-                        content="Onix Blockchain Landing Page UI Design Kit"
-                    />
-                    <meta
-                        content="Onix Blockchain Landing Page UI Design Kit"
-                        property="twitter:title"
-                    />
-                    <meta
-                        content="Epic landing page UI Design Kit for Blockchain, Crypto"
-                        property="twitter:description"
+                        content="Query Blocks"
                     />
                     <meta
                         content="%PUBLIC_URL%/twitter-card.png"
@@ -67,6 +55,9 @@ class MyDocument extends Document {
                     <link
                         href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&family=Karla:wght@400;500;800&display=swap"
                         rel="stylesheet"
+                    />
+                    <link
+                        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"
                     />
                 </Head>
                 <body className="app">

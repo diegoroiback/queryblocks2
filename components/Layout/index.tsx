@@ -9,10 +9,12 @@ import Footer from "@/components/Footer";
 
 type LayoutProps = {
     layoutNoOverflow?: boolean;
+    disable?: boolean;
+    title?: string;
     children: React.ReactNode;
 };
 
-const Layout = ({ layoutNoOverflow, children }: LayoutProps) => {
+const Layout = ({ layoutNoOverflow, children, disable, title }: LayoutProps) => {
     const { pathname } = useRouter();
 
     useEffect(() => {
@@ -23,16 +25,20 @@ const Layout = ({ layoutNoOverflow, children }: LayoutProps) => {
     return (
         <>
             <Head>
-                <title>Query Blocks</title>
+                <title>{title && (`${title} ||`)} Query Blocks</title>
             </Head>
             <div
                 className={cn(styles.layout, {
                     [styles.layoutNoOverflow]: layoutNoOverflow,
                 })}
             >
+            {disable ? '' : (
                 <Header />
+            )}
                 {children}
+            {disable ? '' : (
                 <Footer />
+            )}
             </div>
         </>
     );
