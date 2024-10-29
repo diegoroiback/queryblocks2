@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import cn from "classnames";
 import styles from "./Banner2.module.sass";
 
@@ -10,12 +11,12 @@ const Banner2 = () => {
                     <div className={styles.info}>
                     We blend innovative technologies with cutting-edge design to create digital products that excel in both function and form. Discover how our expertise brings ideas to life.
                     </div>
-                    <a
+                    <Link
                         className={cn("button", styles.button)}
-                        href="/contact"
+                        href="/contact/"
                     >
                         <span>Contact us</span>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

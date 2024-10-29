@@ -24,7 +24,7 @@ const Header = ({dark}: HeaderProps) => {
         if (dark) {
             setIsDark(true)
         }
-    }, [])
+    }, [dark])
 
     return (
         <header
