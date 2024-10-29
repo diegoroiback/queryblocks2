@@ -1,0 +1,66 @@
+@import @/styles/helpers
+
+.section
+    position: relative
+    margin: 0
+
+.image
+    display: block
+    width: 100%
+    height: 657px
+    +d
+        height: 450px
+        background-size: 100% !important
+        background-position: center -200px !important
+    +t
+        height: 250px
+    +s
+        height: 250px
+        background-position: center -25px !important
+
+.content
+    position: absolute
+    bottom: 0
+    background: $n0
+    padding: 40px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    z-index: 2
+    border-radius: 8px 8px 0 0
+    width: 100%
+    left: 50%
+    transform: translate(-50%, 36%)
+    max-width: 1280px
+    border-bottom: 1px solid $n1
+    +d
+        position: relative
+        left: inherit
+        transform: inherit
+        bottom: inherit
+        margin-top: -10px
+    +s
+        padding: 20px
+
+.title
+    font-size: 42px
+    margin-top: 12px
+    line-height: 1.1
+    color: $n6
+
+.tags
+    width: 100%
+    display: flex
+    justify-content: flex-start
+    gap: 7px
+    margin-top: 25px
+    flex-wrap: wrap
+
+.tag
+    border: 1px solid $n6
+    padding: 4px 10px
+    color: $n6
+    font-size: 16px
+    border-radius: 8px
+    &:hover
+        background-color: $n1

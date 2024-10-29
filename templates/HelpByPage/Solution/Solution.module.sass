@@ -1,0 +1,55 @@
+@import @/styles/helpers
+
+.solution
+    background: $n0
+    padding: 100px 0
+
+.container
+    overflow: visible
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    position: relative
+    flex-wrap: wrap
+    gap: 20px
+
+.image
+    width: 48%
+    display: inline-block
+    +t
+        width: 100%
+
+.image_div
+    position: sticky
+    top: 0
+
+.content
+    width: 48%
+    display: flex
+    flex-direction: column
+    gap: 30px
+    +t
+        width: 100%
+
+.title
+    color: $n6
+    font-size: 40px
+    line-height: 1.1
+    font-weight: 800
+    +m
+        margin-right: 0
+
+.subtitle
+    color: $n6
+    font-size: 32px
+    line-height: 1.1
+    font-weight: 600
+    +m
+        margin-right: 0
+
+.text
+    color: $n9
+
+.strong
+    color: $n9
+    font-weight: 700

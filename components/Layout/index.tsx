@@ -10,11 +10,12 @@ import Footer from "@/components/Footer";
 type LayoutProps = {
     layoutNoOverflow?: boolean;
     disable?: boolean;
+    headerDark?: any;
     title?: string;
     children: React.ReactNode;
 };
 
-const Layout = ({ layoutNoOverflow, children, disable, title }: LayoutProps) => {
+const Layout = ({ layoutNoOverflow, children, disable, title, headerDark }: LayoutProps) => {
     const { pathname } = useRouter();
 
     useEffect(() => {
@@ -33,7 +34,7 @@ const Layout = ({ layoutNoOverflow, children, disable, title }: LayoutProps) => 
                 })}
             >
             {disable ? '' : (
-                <Header />
+                <Header dark={headerDark ? headerDark : ''} />
             )}
                 {children}
             {disable ? '' : (
