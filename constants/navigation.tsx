@@ -5,20 +5,19 @@ export const headerNavigation = [
     },
     {
         title: "Projects",
-        url: "#aboutUs",
+        url: "#projects",
     },
     {
         title: "Community",
-        url: "https://ui8.net/",
-        external: true,
-    },
-    {
-        title: "Projects",
-        url: "/blog",
+        url: "#communuty"
     },
     {
         title: "Services",
-        url: "/technology",
+        url: "#services",
+    },
+    {
+        title: "About us",
+        url: "#aboutUs",
     },
     {
         title: "Contact",

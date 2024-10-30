@@ -47,7 +47,7 @@ const Menu = ({ navigation, onClick }: MenuProps) => {
     };
 
     return (
-        <div className={styles.nav}>
+        <div className={styles.nav2}>
             <button
                 className={cn(styles.burger, { [styles.active]: visible })}
                 onClick={handleClick}
@@ -78,84 +78,90 @@ const Menu = ({ navigation, onClick }: MenuProps) => {
             </div>
             {loaded
                 ? createPortal(
-                      <CSSTransition
-                          classNames="menu"
-                          in={visible}
-                          timeout={400}
-                          nodeRef={ref}
-                          unmountOnExit
-                      >
-                          <div
-                              className={cn(styles.menu)}
-                              onClick={() => setVisible(false)}
-                              ref={ref}
-                          >
-                              <div
-                                  className={cn(
-                                      "menu-container",
-                                      styles.container
-                                  )}
-                                  onClick={(e) => e.stopPropagation()}
-                              >
-                                  <nav className={styles.nav}>
-                                      {navigation.map((link, index) =>
-                                          link.external ? (
-                                              <a
-                                                  className={cn(
-                                                      "h2",
-                                                      styles.link
-                                                  )}
-                                                  href={link.url}
-                                                  target="_blank"
-                                                  rel="noopener noreferrer"
-                                                  key={index}
-                                              >
-                                                  {link.title}
-                                              </a>
-                                          ) : (
-                                              <NavLink
-                                                  className={cn(
-                                                      "h2",
-                                                      styles.link
-                                                  )}
-                                                  activeClassName={
-                                                      styles.active
-                                                  }
-                                                  href={link.url}
-                                                  key={index}
-                                              >
-                                                  {link.title}
-                                              </NavLink>
-                                          )
-                                      )}
-                                  </nav>
-                                  <div className={styles.line}>
-                                      <Socials />
-                                      <div className={styles.details}>
-                                          <div className={styles.note}>
-                                              Email
-                                          </div>
-                                          <a
-                                              className={styles.email}
-                                              href="mailto:support@ui8.net"
-                                              target="_blank"
-                                              rel="noreferrer"
-                                          >
-                                              support@ui8.net
-                                          </a>
-                                      </div>
-                                  </div>
-                                  <div className={styles.lines}>
-                                      <Image
-                                          src="/images/menu-lines.svg"
-                                          width={507}
-                                          height={980}
-                                          alt="Lines"
-                                      />
-                                  </div>
-                              </div>
-                          </div>
-                      </CSSTransition>,
+                    <CSSTransition
+                        classNames="menu"
+                        in={visible}
+                        timeout={400}
+                        nodeRef={ref}
+                        unmountOnExit
+                    >
+                        <div
+                            className={cn(styles.menu)}
+                            onClick={() => setVisible(false)}
+                            ref={ref}
+                        >
+                            <div
+                                className={cn(
+                                    "menu-container",
+                                    styles.container
+                                )}
+                                onClick={(e) => e.stopPropagation()}
+                            >
+                                <div className={styles.content}>
+                                    <nav className={styles.nav}>
+                                        {navigation.map((link, index) =>
+                                            link.external ? (
+                                                <a
+                                                    className={cn(
+                                                        "h2",
+                                                        styles.link
+                                                    )}
+                                                    href={link.url}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    key={index}
+                                                >
+                                                    {link.title}
+                                                </a>
+                                            ) : (
+                                                <NavLink
+                                                    className={cn(
+                                                        "h2",
+                                                        styles.link
+                                                    )}
+                                                    activeClassName={
+                                                        styles.active
+                                                    }
+                                                    href={link.url}
+                                                    key={index}
+                                                >
+                                                    {link.title}
+                                                </NavLink>
+                                            )
+                                        )}
+                                    </nav>
+                                    <div className={styles.line}>
+                                        <Socials />
+                                        <div className={styles.details}>
+                                            <p className={styles.menu_text}>Have a project in mind Let’s talk!</p>
+                                            <div className={styles.note}>
+                                                Email
+                                            <a
+                                                className={styles.email}
+                                                href="mailto:contact@queryblocks.io"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                                contact@queryblocks.io
+                                            </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className={styles.lines}>
+                                    <Image
+                                        src="/images/menu-lines.svg"
+                                        width={507}
+                                        height={980}
+                                        alt="Lines"
+                                    />
+                                </div>
+                                <div className={styles.lower}>
+                                    <p className={styles.lower_text}>Transforming ideas into digital success</p>
+                                </div>
+                            </div>
+                        </div>
+                    </CSSTransition>,
                       document.body
                   )
                 : null}
