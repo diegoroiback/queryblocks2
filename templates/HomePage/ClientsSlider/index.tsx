@@ -22,12 +22,15 @@ const ClientsSlider = ({}: ClientsSliderProps) => {
 
         const handleResize = () => {
             const width = window.innerWidth;
-            if (width > 1000) {
+            if (width > 800) {
                 setCurrentSlide(3);
                 setItemsPaginator(2);
-            } if (width < 1000 && width > 500) {
+            } if (width < 800 && width > 500) {
                 setCurrentSlide(2);
                 setItemsPaginator(1);
+            } if (width < 500) {
+                setCurrentSlide(1);
+                setItemsPaginator(0);
             }
         }
 

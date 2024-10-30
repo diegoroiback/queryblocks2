@@ -34,13 +34,8 @@ const Clients = ({}: ClientsProps) => {
         <div className={styles.head}>
           <div className={styles.titles} data-aos="fade-right">
               <div className={cn("h2", styles.title)}>
-                Our clients lead the way
+                More projects
               </div>
-          </div>
-          <div className={styles.contText} data-aos="fade-left">
-            <p className={styles.paragraph}>
-              We blend innovative technologies with cutting-edge design to create digital products that excel in both function and form. Discover how our expertise brings ideas to life.
-            </p>
           </div>
         </div>
       </div>

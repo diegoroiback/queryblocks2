@@ -30,9 +30,9 @@ const Results = ({}: ResultsProps) => {
                     </div>
                     <a className={styles.link}>See our portfolio</a>
                 </div>
-                <div className={styles.list}>
+                <div className={styles.list} data-aos="zoom-in">
                     {results.map((item, index) => (
-                        <div className={styles.item} key={index} data-aos="zoom-in">
+                        <div className={styles.item} key={index} >
                             <div className={cn("h3", styles.name)}>
                                 {item.before}{inView && <CountUp start={0} end={item.number} duration={1.5} />}{item.after}
                             </div>

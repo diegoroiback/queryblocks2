@@ -74,6 +74,7 @@ const Services = () => {
                     <Image className={styles.img} key={index}
                         src={item.url}
                         width={60}
+                        alt={''}
                         height={60} />
                 ))}
             </div>

@@ -14,7 +14,7 @@ const HomePage = () => {
     const scrollToRef = useRef(null);
 
     return (
-        <Layout>
+        <Layout layoutNoOverflow={true}>
             <Main scrollToRef={scrollToRef} />
             <Logos />
             <Clients />

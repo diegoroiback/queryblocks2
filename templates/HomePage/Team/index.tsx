@@ -3,6 +3,8 @@ import { useMediaQuery } from "react-responsive";
 import cn from "classnames";
 import styles from "./Team.module.sass";
 import Image from "@/components/Image";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import { team } from "@/constants/team";
 
@@ -17,7 +19,7 @@ const Team = ({}: TeamProps) => {
         <div className={cn("section", styles.section)}>
             <div className={cn("container", styles.container)}>
                 <div className={styles.head}>
-                    <div className={styles.titles}>
+                    <div className={styles.titles} data-aos="fade-up">
                         <div className={cn("h2", styles.title)}>
                             Built by developers, for&nbsp;developers.
                         </div>
@@ -25,7 +27,7 @@ const Team = ({}: TeamProps) => {
                             Meet the Query Blocks team
                         </div>
                     </div>
-                    <a className={styles.link}>See who we are</a>
+                    <a className={styles.link} data-aos="fade-left">See who we are</a>
                 </div>
                 <div className={styles.list}>
                     {team.map((man, index) => (
@@ -34,7 +36,6 @@ const Team = ({}: TeamProps) => {
                             animateIn="fadeInDown"
                             delay={isMobile ? 0 : man.delay}
                             key={index}
-                            animateOnce
                         >
                             <div
                                 className={styles.square}
