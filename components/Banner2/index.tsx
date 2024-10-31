@@ -12,10 +12,9 @@ const Banner2 = () => {
                     We blend innovative technologies with cutting-edge design to create digital products that excel in both function and form. Discover how our expertise brings ideas to life.
                     </div>
                     <Link
-                        className={cn("button", styles.button)}
                         href="/contact/"
                     >
-                        <span>Contact us</span>
+                        <a className={cn("button", styles.button)}>Contact us</a>
                     </Link>
                 </div>
             </div>

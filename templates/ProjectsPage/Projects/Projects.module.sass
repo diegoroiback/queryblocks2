@@ -1,84 +1,53 @@
 @import @/styles/helpers
 
-.section
+.wrapper
+    padding: 20px 0 100px
     border-bottom: 1px solid $n4
-    padding-top: 100px
-    margin: 0
-    +t
-        padding-bottom: 100px
-        overflow: hidden
-.head
-    display: flex
-    flex-wrap: wrap
-    margin: 0 auto 17px
-    text-align: left
-    align-items: flex-start
-    justify-content: space-between
-    +m
-        max-width: 100%
-.title
-    text-align: left
-    margin-bottom: 24px
-    +t
+    overflow: hidden
+
+.tags
+    &_title
+        font-weight: 600
+    &_list
         width: 100%
-.paragraph
-    text-align: left
+        display: flex
+        justify-content: flex-estart
+        gap: 7px
+        margin: 15px 0 25px
+        flex-wrap: wrap
 
-.contText
-    padding-top: 20px
-    +body2
-    display: flex
-    flex-direction: column
-    align-items: flex-start
-    width: 49%
-    +d
-        width: 100%
 
-.link
-    +link
-    margin-top: 10px
-    +t
-        margin-top: 24px
+.btn
+    border: 1px solid $n2
+    padding: 7px 10px
+    font-size: 16px
+    color: $n0
+    border-radius: 8px
+    background-color: $n8
+    &:hover
+        background-color: $n7
 
-.titles
-    width: 31%
-    +d
-        width: 100%
-
-.section_carousel
-    height: 500dvh
-    +d
-        height: auto
-
-.container_slider
-    max-width: 1321px
-    margin: auto
-    height: 100dvh
-    position: sticky
-    padding: 0 20px
-    top: 100px
-    display: flex
-    align-items: flex-start
-    justify-content: flex-start
-    +d
-        height: auto
-        position: relative
-        top: auto
+.active
+    background: $n0
+    color: $n6
+    &:hover
+        background: $n1
 
 .slider
     display: grid
-    grid-template-columns: repeat(8, 1fr)
+    grid-template-columns: repeat(3, 1fr)
     grid-template-rows: 1fr
+    width: 100%
+    margin-top: 100px
     gap: 20px
     +d
         grid-template-columns: repeat(2, 1fr)
-        width: 100%
     +s
         grid-template-columns: repeat(1, 1fr)
 
 .slide
-    height: calc(100dvh - 120px)
-    width: 29dvw
+    height: calc(100dvh - 80px)
+    width: 100%
     position: relative
     overflow: hidden
     border-radius: 8px
@@ -89,10 +58,10 @@
         &>span
             transform: scale(1.2)
         .other_info
-            border-color: $n0
-            max-height: 150px
             padding-top: 25px
             margin-top: 15px
+            border-color: $n0
+            max-height: 150px
     &_link
         display: flex
         align-items: center
@@ -104,7 +73,7 @@
         width: 100%
         height: 600px
 
-.tags
+.tags_slide
     padding: 20px
     position: absolute
     left: 0
@@ -123,7 +92,7 @@
         +t
             margin-left: 0
 
-.tag
+.tag_slide
     border: 1px solid $n0
     padding: 4px 10px
     font-size: 16px
@@ -166,6 +135,8 @@
         border-color: $n0
         padding-top: 25px
         margin-top: 15px
+    +s
+        display: none
     &_item
         width: 33%
     &_title
@@ -177,3 +148,8 @@
     &_text
         color: $n0
         line-height: 1.1
+
+.no_match
+    grid-column: 1 / -1
+    text-align: center
+    font-size: 35px

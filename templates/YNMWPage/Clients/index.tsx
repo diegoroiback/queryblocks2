@@ -58,8 +58,11 @@ const Clients = ({}: ClientsProps) => {
                         alt={item.title}
                     />
                     <div className={styles.tags}>
-                      {item.tags.map((tag, index) => (
-                        <p className={styles.tag} key={index}>{tag.text}</p>
+                      {item.tags.industries?.map((tag, index) => (
+                        <p className={styles.tag} key={index}>{tag}</p>
+                      ))}
+                      {item.tags.tecnologies?.map((tag, index) => (
+                        <p className={styles.tag} key={index}>{tag}</p>
                       ))}
                         <p className={styles.tag}>{'>>'}</p>
                     </div>
@@ -85,7 +88,7 @@ const Clients = ({}: ClientsProps) => {
               </div>
             ))}
             <div className={`${styles.slide_link} ${styles.slide}`}>
-              <Link href="/project/q-mission" className={styles.link}>
+              <Link href="/projects" className={styles.link}>
                 See all projects
               </Link>
             </div>

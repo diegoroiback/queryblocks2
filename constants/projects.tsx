@@ -5,17 +5,15 @@ export const projects = [
         img: "/images/projects/atua-card.png",
         text: "Peer-to-peer car sharing, on your terms.",
         url: '/project/atua',
-        tags: [
-            {
-                text: 'Car-sharing',
-            },
-            {
-                text: 'Web',
-            },
-            {
-                text: 'Mobile'
-            }
-        ],
+        tags: {
+            industries: [
+                'Car-sharing',
+            ],
+            tecnologies: [
+                'Web',
+                'Mobile',
+            ],
+        },
         info: [
             {
                 title: '2 Phases',
@@ -37,17 +35,15 @@ export const projects = [
         img: "/images/projects/helpby-card.png",
         text: "Your doctor, just a video call away",
         url: '/project/help-by',
-        tags: [
-            {
-                text: 'Healthcare',
-            },
-            {
-                text: 'Web',
-            },
-            {
-                text: 'Mobile'
-            }
-        ],
+        tags: {
+            industries: [
+                'Healthcare',
+            ],
+            tecnologies: [
+                'Web',
+                'Mobile',
+            ]
+        },
         info: [
             {
                 title: '2 Phases',
@@ -69,17 +65,15 @@ export const projects = [
         img: "/images/projects/qmission-card.png",
         text: "A full cyber operations plataform.",
         url: '/project/q-mission',
-        tags: [
-            {
-                text: 'Cybersecurity',
-            },
-            {
-                text: 'E-learning',
-            },
-            {
-                text: 'Web'
-            }
-        ],
+        tags: {
+            industries: [
+                'Cybersecurity',
+            ],
+            tecnologies: [
+                'E-learning',
+                'Web',
+            ],
+        },
         info: [
             {
                 title: '2 Phases',
@@ -101,14 +95,14 @@ export const projects = [
         img: "/images/projects/ymnw-card.png",
         text: "AI-powered productivity tracking.",
         url: '/project/you-might-need-work',
-        tags: [
-            {
-                text: 'Project management',
-            },
-            {
-                text: 'Mobile',
-            },
-        ],
+        tags: {
+            industries: [
+                'Project management',
+            ],
+            tecnologies: [
+                'Mobile',
+            ],
+        },
         info: [
             {
                 title: '2 Phases',
@@ -130,14 +124,14 @@ export const projects = [
         img: "/images/projects/blinka-card.png",
         text: "Mortagage origination and management.",
         url: '/project/blinka',
-        tags: [
-            {
-                text: 'Fintech',
-            },
-            {
-                text: 'Web'
-            }
-        ],
+        tags: {
+            industries: [
+                'Fintech',
+            ],
+            tecnologies: [
+                'Web',
+            ],
+        },
         info: [
             {
                 title: '2 Phases',
@@ -159,14 +153,14 @@ export const projects = [
         img: "/images/projects/sendit-card.png",
         text: "Send files instantly, no emails, all P2P.",
         url: '/project/sendit',
-        tags: [
-            {
-                text: 'Blockchain',
-            },
-            {
-                text: 'Desktop'
-            }
-        ],
+        tags: {
+            industries: [
+                'Blockchain',
+            ],
+            tecnologies: [
+                'Desktop',
+            ],
+        },
         info: [
             {
                 title: '2 Phases',
@@ -188,17 +182,16 @@ export const projects = [
         img: "/images/projects/henders-castle-card.png",
         text: "3D action-adventure game.",
         url: '/project/henders-castle',
-        tags: [
-            {
-                text: 'Action',
-            },
-            {
-                text: 'Adventure',
-            },
-            {
-                text: 'Game'
-            }
-        ],
+        tags: {
+            industries: [
+                'Game',
+                'Action',
+                'Adventure',
+            ],
+            tecnologies: [
+                'Unity',
+            ],
+        },
         info: [
             {
                 title: '2 Phases',
@@ -215,3 +208,30 @@ export const projects = [
         ],
     },
 ];
+
+export const tags = [
+    {
+        title: 'Industry',
+        tags: [
+            'Fintech',
+            'Banking',
+            'Healthcare',
+            'Entertaiment',
+            'Video Games',
+            'Blockchain',
+        ]
+    },
+    {
+        title: 'Technologies:',
+        tags: [
+            'Flutter',
+            'Golang',
+            'IOS',
+            'Android',
+            'Frontend',
+            'Backend',
+            'Solidity',
+            'Unity',
+        ]
+    },
+]

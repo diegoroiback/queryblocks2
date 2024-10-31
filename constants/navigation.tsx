@@ -5,19 +5,19 @@ export const headerNavigation = [
     },
     {
         title: "Projects",
-        url: "#projects",
+        url: "/projects",
     },
     {
         title: "Community",
-        url: "#communuty"
+        url: "/communuty"
     },
     {
         title: "Services",
-        url: "#services",
+        url: "/services",
     },
     {
         title: "About us",
-        url: "#aboutUs",
+        url: "/aboutUs",
     },
     {
         title: "Contact",
