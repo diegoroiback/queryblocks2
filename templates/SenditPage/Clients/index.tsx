@@ -19,7 +19,7 @@ const Clients = ({}: ClientsProps) => {
     const handleResize = () => {
       setIsWideScreen(window.innerWidth >= 1179);
     };
-    setOthersClients(projects.filter(project => project.title !== "Help By"))
+    setOthersClients(projects.filter(project => project.title !== "Sendit"))
 
     handleResize();
     window.addEventListener("resize", handleResize);

@@ -12,7 +12,7 @@ const HomePage = () => {
     const scrollToRef = useRef(null);
 
     return (
-        <Layout title='Q-Mission' headerDark={true} >
+        <Layout title='Helpby: A platform for booking doctors worldwide' headerDark={true} >
             <Main />
             <Introduction />
             <Challenges />
