@@ -3,7 +3,6 @@
 .solution
     background: $n0
     padding: 100px 0
-    overflow: hidden
 
 .container
     overflow: visible
@@ -17,12 +16,13 @@
 .image
     width: 48%
     display: inline-block
+    position: sticky
+    top: 100px
     +t
         width: 100%
+        position: relative
+        top: inherit
 
-.image_div
-    position: sticky
-    top: 0
 
 .content
     width: 48%

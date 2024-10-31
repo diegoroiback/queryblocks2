@@ -3,7 +3,6 @@
 .introduction
     background: $n0
     padding: 153px 0 100px
-    overflow: hidden
     +d
         padding-top: 100px
 
@@ -20,9 +19,11 @@
     z-index: 9
     position: sticky
     display: inline-block
-    top: 0
+    top: 100px
     +t
         width: 100%
+        position: relative
+        top: inherit
 
 .content
     width: 52.5%
