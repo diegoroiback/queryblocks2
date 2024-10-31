@@ -54,6 +54,7 @@ const Clients = ({}: ClientsProps) => {
                     <Image
                         src={item.img}
                         layout="fill"
+                        className={styles.content_img}
                         objectFit="cover"
                         alt={item.title}
                     />

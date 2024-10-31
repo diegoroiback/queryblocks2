@@ -55,6 +55,7 @@ const Clients = ({}: ClientsProps) => {
                 <Link href={item.url}>
                   <a>
                     <Image
+                        className={styles.content_img}
                         src={item.img}
                         layout="fill"
                         objectFit="cover"
