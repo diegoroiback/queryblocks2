@@ -7,6 +7,7 @@ import styles from "./JoinCommunity.module.sass";
 import Image from "@/components/Image";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Link from "next/link";
 
 const images = [
     "/images/figures/join-figure-1.svg",
@@ -47,24 +48,23 @@ const JoinCommunity = () => {
                     <div className={cn("h2", styles.title)}>Be part of our success stories.</div>
                     <div className={cn("h3", styles.subtitle)}>We can make it happen!</div>
                     <div className={styles.info}>
-                        <a
-                            className={styles.social}
-                            href="/contact"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            Contact us or write to us.
-                        </a>
+                        <Link href="/contact">
+                            <a
+                                className={styles.social}
+                            >
+                                Contact us or write to us.
+                            </a>
+                        </Link>
                         {" "} We are ready to help you achieve your goals.
                         .
                     </div>
-                    <a
-                        className={cn("button", styles.button)}
-                        href="/contact"
-                        rel="noopener noreferrer"
-                    >
-                        <span>Contact us</span>
-                    </a>
+                    <Link href="/contact">
+                        <a
+                            className={cn("button", styles.button)}
+                        >
+                            <span>Contact us</span>
+                        </a>
+                    </Link>
                 </div>
                 <div className={styles.images}>
                     <div className={`${styles['image']} ${styles['c-anim']} ${styles['c-anim--4']}`}>
