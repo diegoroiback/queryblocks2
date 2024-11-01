@@ -44,15 +44,12 @@
 
 
 .item
+    padding: 68px 20px
     display: flex
-    align-items: center
-    padding: 68px 142px
     border-bottom: 1px solid $n4
     justify-content: space-between
     transition: padding .5s, background .5s
     background: $n8
-    gap: 20px
-    flex-wrap: wrap
     &:hover
         background: $n7
         padding-bottom: 80px
@@ -69,6 +66,16 @@
     +d
         width: 100%
 
+.item_content
+    max-width: 1150px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 20px
+    flex-wrap: wrap
+    margin: auto
+    width: 100%
+
 .position
     +roboto
 
@@ -80,8 +87,8 @@
 
 .text
     width: 35%
-    padding-top: 24px
     +d
+        padding-top: 24px
         width: 100%
 
 .tags

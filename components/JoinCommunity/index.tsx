@@ -49,7 +49,7 @@ const JoinCommunity = () => {
                     <div className={styles.info}>
                         <a
                             className={styles.social}
-                            href="/"
+                            href="/contact"
                             target="_blank"
                             rel="noreferrer"
                         >
@@ -60,11 +60,10 @@ const JoinCommunity = () => {
                     </div>
                     <a
                         className={cn("button", styles.button)}
-                        href="https://ui8.net/"
-                        target="_blank"
+                        href="/contact"
                         rel="noopener noreferrer"
                     >
-                        <span>JOIN THE COMMUNITY</span>
+                        <span>Contact us</span>
                     </a>
                 </div>
                 <div className={styles.images}>

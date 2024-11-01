@@ -36,19 +36,21 @@ const Services = ({}: ServicesProps) => {
             <div className={styles.list}>
                 {services.map((item, index) => (
                     <div className={styles.item} key={index}>
-                        <div className={styles.content} data-aos="fade-right">
-                            <p className={styles.position}>{formatNumber(index)}</p>
-                            <div className={cn("h3", styles.name)}>
-                                {item.title}
+                        <div className={styles.item_content}>
+                            <div className={styles.content} data-aos="fade-right">
+                                    <p className={styles.position}>{formatNumber(index)}</p>
+                                    <div className={cn("h3", styles.name)}>
+                                        {item.title}
+                                    </div>
                             </div>
-                        </div>
-                        <p className={styles.text} data-aos="fade-up">{item.text}</p>
-                        <div className={styles.tags} data-aos="fade-left">
-                            {item.tags.map((tag, index) => (
-                                <div key={index}>
-                                    <p className={styles.tag}>{tag.title}</p>
-                                </div>
-                            ))}
+                            <p className={styles.text} data-aos="fade-up">{item.text}</p>
+                            <div className={styles.tags} data-aos="fade-left">
+                                {item.tags.map((tag, index) => (
+                                    <div key={index}>
+                                        <p className={styles.tag}>{tag.title}</p>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 ))}
