@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 
 const content = {
     bg: '/images/projects/handers-castle-bg.jpeg',
-    title: 'Hender’s Castle: 3D action-adventure game.',
+    title: 'Hender’s Castle: A Thrilling 3D Action-Adventure Game.',
     logo: '/images/projects/logo-handers-castle.svg',
     tags: [
         'Action',
@@ -30,6 +30,7 @@ const Main = () => {
             <Image className={styles.logo}
                 src={content.logo}
                 width={119}
+                alt={content.title}
                 height={32} />
             <div className={cn("h1", styles.title)} data-aos="fade-up">{content.title}</div>
             <div className={styles.tags} data-aos="fade-left">

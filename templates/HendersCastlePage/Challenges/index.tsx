@@ -19,17 +19,26 @@ const Challenges = ({}: ChallengesProps) => {
                 Challenges
             </div>
             <div className={styles.column} data-aos="fade-up">
+                <div className={cn("p", styles.subtitle)}>
+                Developing Mechanics Inspired by The Legend of Zelda
+                </div>
                 <div className={cn("p", styles.text)}>
-                One of the major challenges was to develop a game with mechanics similar to The Legend of Zelda, a classic adventure game, that involved combat, exploration, and puzzle-solving. Additionally, there was a need to integrate a distinctive visual style using Unity Shader, which required balancing aesthetics and game performance. Creating an engaging narrative that kept players immersed in the family story while adding a personal and emotional touch to the game was also essential.
+                One of the primary challenges was designing gameplay mechanics reminiscent of The Legend of Zelda, integrating elements of combat, exploration, and puzzle-solving. The goal was to create an engaging experience that kept players immersed while introducing unique, challenging game mechanics.
+                </div>
+                <div className={cn("p", styles.subtitle)}>
+                Balancing Visual Style with Performance Using Unity Shader
+                </div>
+                <div className={cn("p", styles.text)}>
+                The game required a distinctive visual style achieved through Unity Shader, which had to be carefully balanced to maintain both aesthetic appeal and high performance. Achieving this balance was crucial to delivering smooth gameplay without compromising graphic quality.
+                </div>
+                <div className={cn("p", styles.subtitle)}>
+                Creating an Emotionally Driven Narrative
+                </div>
+                <div className={cn("p", styles.text)}>
+                A core challenge was crafting a storyline that not only captivated players but also added emotional depth, tying each player’s action to the goal of restoring the family’s honor. This personal narrative aimed to enhance player immersion and emotional connection to the game.
                 </div>
             </div>
             <div className={styles.column} data-aos="fade-up">
-                <div className={cn("p", styles.title2)}>
-                    Flow for the user to send a file.
-                </div>
-                <div className={cn("p", styles.text)}>
-                The user flow for sending a file is summarized in 3 simple steps: selecting the recipients, adding the file to send, and that's it! Just wait for the transfer to complete.
-                </div>
                 <Image className={styles.img}
                     src='/images/projects/handers-castle-documentation.png'
                     width={592}

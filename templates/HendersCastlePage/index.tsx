@@ -12,7 +12,7 @@ const HomePage = () => {
     const scrollToRef = useRef(null);
 
     return (
-        <Layout title='Hender’s Castle: 3D action-adventure game' headerDark={true} >
+        <Layout title='Hender’s Castle: A Thrilling 3D Action-Adventure Game' headerDark={true} >
             <Main />
             <Introduction />
             <Challenges />

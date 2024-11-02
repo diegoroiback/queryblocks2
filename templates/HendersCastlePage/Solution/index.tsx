@@ -20,7 +20,7 @@ const Solution = ({}: solutionProps) => {
                     <Image className={styles.img}
                         src='/images/projects/handers-castle-solution.png'
                         width={590}
-                        height={573}
+                        height={436}
                         alt={'Help By'}
                     />
                 </div>
