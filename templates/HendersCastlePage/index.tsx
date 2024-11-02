@@ -5,7 +5,7 @@ import Introduction from "./Introduction";
 import Challenges from "./Challenges";
 import Solution from "./Solution";
 import Services from "./Services";
-import Clients from "./Clients";
+import Clients from "@/components/Clients";
 import Banner2 from "@/components/Banner2";
 
 const HomePage = () => {
@@ -18,7 +18,7 @@ const HomePage = () => {
             <Challenges />
             <Solution />
             <Services />
-            <Clients />
+            <Clients current='Hender’s Castle' />
             <Banner2 />
         </Layout>
     );

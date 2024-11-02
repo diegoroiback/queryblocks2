@@ -40,21 +40,44 @@
     flex-wrap: wrap
     gap: 50px 0
     justify-content: space-between
+    +t
+        gap: 30px 0
     div
         +t
-            width: 50%
-        +s
             width: 100%
 
 .categorie_title
     font-weight: 500
     color: $n1
     margin-bottom: 7px
+    display: flex
+    align-items: center
+    gap: 10px
+    +t
+        cursor: pointer
+        &:hover
+            color: $c1
+    svg
+        display: none
+        transition: transform .5s
+        +t
+            display: flex
+    &_active
+        svg
+            transform: rotate(180deg)
 
 .list
     display: flex
     flex-direction: column
     gap: 10px
+    &_nav
+        +t
+            max-height: 0
+            transition: max-height .5s
+            overflow: hidden
+    &_active
+        +t
+            max-height: 250px
 
 .list_2
     margin-bottom: 23px

@@ -6,7 +6,7 @@ import Challenges from "./Challenges";
 import Solution from "./Solution";
 import Services from "./Services";
 import Banner2 from "@/components/Banner2";
-import Clients from "./Clients";
+import Clients from "@/components/Clients";
 
 const HomePage = () => {
     const scrollToRef = useRef(null);
@@ -18,7 +18,7 @@ const HomePage = () => {
             <Challenges />
             <Solution />
             <Services />
-            <Clients />
+            <Clients current='Help By' />
             <Banner2 />
         </Layout>
     );

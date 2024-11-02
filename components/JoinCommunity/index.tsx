@@ -56,7 +56,6 @@ const JoinCommunity = () => {
                             </a>
                         </Link>
                         {" "} We are ready to help you achieve your goals.
-                        .
                     </div>
                     <Link href="/contact">
                         <a

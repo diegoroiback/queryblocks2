@@ -8,9 +8,11 @@ import Link from "next/link";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-type ClientsProps = {};
+type ClientsProps = {
+  current?: string;
+};
 
-const Clients = ({}: ClientsProps) => {
+const Clients = ({ current }: ClientsProps) => {
   const targetRef = useRef(null);
   const [isWideScreen, setIsWideScreen] = useState(true);
   const [othersClients, setOthersClients] = useState(projects);
@@ -19,13 +21,13 @@ const Clients = ({}: ClientsProps) => {
     const handleResize = () => {
       setIsWideScreen(window.innerWidth >= 1179);
     };
-    setOthersClients(projects.filter(project => project.title !== "Sendit"))
+    setOthersClients(projects.filter(project => project.title !== current))
 
     handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  }, [current]);
 
   const { scrollYProgress } = useScroll({ target: targetRef });
   const xTransform = useTransform(scrollYProgress, [0, 1], ['0%', '-155dvw']);

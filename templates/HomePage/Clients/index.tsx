@@ -26,7 +26,7 @@ const Clients = ({}: ClientsProps) => {
   }, []);
 
   const { scrollYProgress } = useScroll({ target: targetRef });
-  const xTransform = useTransform(scrollYProgress, [0, 1], ['0%', '-165dvw']);
+  const xTransform = useTransform(scrollYProgress, [0, 1], ['0%', '-155dvw']);
 
   return (
     <div className={styles.section}>

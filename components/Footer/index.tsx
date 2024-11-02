@@ -4,12 +4,16 @@ import styles from "./Footer.module.sass";
 import Logo from "@/components/Logo";
 import NavLink from "@/components/NavLink";
 import Socials from "@/components/Socials";
+import { FaAngleDown } from "react-icons/fa";
 
 import { footerNavigation, documents } from "@/constants/navigation";
+import { useState } from "react";
 
 type FooterProps = {};
 
 const Footer = ({}: FooterProps) => {
+    const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
     return (
         <footer className={styles.footer}>
             <div className={cn("container", styles.container)}>
@@ -48,8 +52,9 @@ const Footer = ({}: FooterProps) => {
                         </div>
                         {footerNavigation.map((link, index) =>
                             <div key={index} className={styles.categorie}>
-                                <p className={styles.categorie_title}>{link.titleCategorie}</p>
-                                <ul className={styles.list}>
+                                <p className={`${styles.categorie_title} ${activeIndex === index ? styles.categorie_title_active : ''}`}
+                                    onClick={() => setActiveIndex(activeIndex === index ? null : index)}>{link.titleCategorie} <FaAngleDown /></p>
+                                <ul className={`${styles.list} ${styles.list_nav} ${activeIndex === index ? styles.list_active : ''}`} >
                                     {link.links.map((item, index) => (
                                         <li key={index}>
                                             {item.isLink ? (
