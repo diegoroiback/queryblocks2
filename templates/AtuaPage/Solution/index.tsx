@@ -29,10 +29,31 @@ const Solution = ({}: solutionProps) => {
                         Solution
                     </div>
                     <div className={cn("h2", styles.subtitle)}>
-                    The final solution allowed ATUA to offer a seamless, 100% online process, benefiting both users and vehicle owners.
+                    ATUA successfully overcame these challenges by implementing a robust, flexible, and fully online solution, benefiting both users and car owners.
+                    </div>
+                    <div className={cn("p", styles.strong)}>
+                    Advanced Platform Architecture
                     </div>
                     <div className={cn("p", styles.text)}>
-                    To overcome these challenges, a flexible architecture was developed using technologies such as Django, Flutter, Next.js, Terraform, AWS, CodeMagic, Firebase, and Rest Framework. These tools allowed for the creation of a scalable, secure, and user-friendly platform. Integration with insurance companies and payment methods was achieved through custom solutions that ensured the automation of financial processes and transaction security. Additionally, real-time tracking systems and management reports were implemented, providing both drivers and hosts with the peace of mind and control necessary to operate in a fully digital environment.
+                    Using technologies like Django, Flutter, Next.js, Terraform, AWS, CodeMagic, Firebase, and REST Framework, we developed a scalable, secure, and intuitive platform. This infrastructure allowed seamless integration with both private vehicle owners and traditional car rental agencies.
+                    </div>
+                    <div className={cn("p", styles.strong)}>
+                    Automated Insurance and Financial Processes
+                    </div>
+                    <div className={cn("p", styles.text)}>
+                    Custom solutions were built to integrate insurance providers, automating the protection process for both car owners and renters. This provides peace of mind and simplifies the process for end users, ensuring that coverage is always in place without additional steps.
+                    </div>
+                    <div className={cn("p", styles.strong)}>
+                    Flexible Payment Solutions
+                    </div>
+                    <div className={cn("p", styles.text)}>
+                    Multiple payment gateways were implemented to facilitate quick and secure transactions, supporting both local and international payments. This ensures ATUA’s payment system remains adaptable, reliable, and easy for users worldwide.
+                    </div>
+                    <div className={cn("p", styles.strong)}>
+                    Real-Time Tracking and Management Reports
+                    </div>
+                    <div className={cn("p", styles.text)}>
+                    To enhance user experience, real-time tracking systems and management reports were implemented, offering both drivers and hosts full control and transparency over their rentals, creating a seamless, fully digital rental experience.
                     </div>
                 </div>
             </div>

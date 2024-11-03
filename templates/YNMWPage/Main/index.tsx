@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 
 const content = {
     bg: '/images/projects/ymnw-bg.jpeg',
-    title: 'you might need work: AI-powered productivity tracking.',
+    title: 'You Might Need Work: AI-Powered Time Tracking and Productivity Management',
     logo: '/images/projects/logo-ymnw.svg',
     tags: [
         'Project management',
@@ -28,6 +28,7 @@ const Main = () => {
         <div className={styles.content}>
             <Image className={styles.logo}
                 src={content.logo}
+                alt={content.title}
                 width={119}
                 height={32} />
             <div className={cn("h1", styles.title)} data-aos="fade-up">{content.title}</div>

@@ -39,7 +39,7 @@ const Clients = ({}: ClientsProps) => {
           </div>
           <div className={styles.contText} data-aos="fade-left">
             <p className={styles.paragraph}>
-              We blend innovative technologies with cutting-edge design to create digital products that excel in both function and form. Discover how our expertise brings ideas to life.
+            Our team combines the latest technologies and modern design principles to craft digital solutions that excel in functionality and aesthetics. Explore how our proven expertise turns your vision into impactful digital experiences.
             </p>
           </div>
         </div>

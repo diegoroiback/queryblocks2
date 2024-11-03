@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 
 const content = {
     bg: '/images/projects/sendit-bg.jpeg',
-    title: 'Sendit: Send files instantly, no emails, all P2P.',
+    title: 'Sendit: Secure, Instant Peer-to-Peer File Transfer',
     logo: '/images/projects/logo-sendit.svg',
     tags: [
         'Blockchain',
@@ -28,6 +28,7 @@ const Main = () => {
         <div className={styles.content}>
             <Image className={styles.logo}
                 src={content.logo}
+                alt={content.title}
                 width={119}
                 height={32} />
             <div className={cn("h1", styles.title)} data-aos="fade-up">{content.title}</div>

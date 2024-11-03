@@ -19,7 +19,7 @@ const Main = ({ scrollToRef }: MainProps) => {
             <div className={styles.wrap}>
                 <div className={cn("h1", styles.title)} data-aos="fade-up">Transforming ideas into digital success</div>
                 <div className={styles.info} data-aos="fade-left">
-                    <p className='p'>Ideate, design, and develop powerful software. Leap into the future with a team trusted by the world’s biggest brands.</p>
+                    <p className='p'>We ideate, design, and develop powerful software. Leap into the future with a team trusted by the most exciting upcoming companies.</p>
                     <a href="/projects" className={styles.link}>See our portfolio</a>
                 </div>
             </div>

@@ -25,14 +25,14 @@ const Introduction = ({}: introductionProps) => {
                 </div>
                 <div className={styles.content} data-aos="fade-left">
                     <div className={cn("h2", styles.title)}>
-                        Helpby is a trusted community marketplace for people to list, discover, and book doctors around the world
+                    HelpBy is a telemedicine platform that connects patients with healthcare providers, delivering medical consultations through secure in-app video calls or in-person visits.
                     </div>
                     <div className={cn("p", styles.text)}>
-                    HelpBy was born out of necessity during the pandemic, when remote access to healthcare became critical. After thorough evaluation alongside healthcare professionals, we decided to create this platform, offering healthcare access with just a single click.
+                    Developed during the pandemic to meet the urgent need for remote healthcare, HelpBy bridges patients and doctors through a fully integrated digital clinic experience.
                     <br /><br />
-                    HelpBy is an innovative medical app designed to bring healthcare to people’s fingertips through evidence-based digital health solutions. The platform offers multiple tools for both patients and doctors, allowing comprehensive healthcare management. Patients can find specialists, schedule video calls or in-person appointments, access their medical history, receive reminders for appointments and medications, and contact their doctors directly. Additionally, it provides a digital clinic where patients can carry out the same operations without leaving their homes or by scheduling in-person visits through HelpBy.
+                    HelpBy offers patients tools to manage their healthcare from anywhere, with features like specialist searches, one-click appointment booking for video or in-office consultations, easy access to their health history, digital prescriptions, and follow-up reminders for treatments. The platform’s built-in video call technology ensures smooth virtual appointments without the need for external apps.
                     <br /><br />
-                    For doctors, the platform enables managing their practice from their mobile devices, scheduling appointments, conducting consultations in various formats (video calls, in-office, or at-home), accessing and updating patient records, sending and receiving messages, processing digital payments, and issuing electronic invoices.
+                    For doctors, HelpBy provides comprehensive practice management. They can schedule appointments, conduct secure telemedicine consultations, view and update patient records, send follow-up messages, and process payments—all from one mobile-friendly platform. HelpBy streamlines the healthcare experience, enabling doctors to provide quality care both digitally and in-person.
                     </div>
                 </div>
             </div>

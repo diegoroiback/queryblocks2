@@ -19,14 +19,23 @@ const Challenges = ({}: ChallengesProps) => {
                 Challenges
             </div>
             <div className={styles.column} data-aos="fade-up">
-                <div className={cn("p", styles.text)} data-aos="fade-right">
-                    One of the most significant challenges we faced during the development of Q-Mission®UCP was creating an environment where cybersecurity operators, regardless of their skill level—whether beginners, intermediates, or seasoned professionals—could effectively train. This environment needed to simulate real-world cybersecurity threats and incidents, such as complex cyber operations, ethical hacking scenarios, malware attacks, ransomware incidents, and even advanced persistent threats (APTs). The platform needed to cater to users with different levels of experience while maintaining a high level of complexity and realism.
+                <div className={cn("p", styles.subtitle)}>
+                Creating a Realistic Cybersecurity Training Environment
                 </div>
                 <div className={cn("p", styles.text)}>
-                    The goal was to not only mimic real-world cyberattacks but also create evolving, dynamic simulations that would adapt to various attack patterns, enabling operators to experience diverse threat landscapes. It was crucial to ensure that these simulations were robust enough to challenge advanced users but also accessible to those still learning. Another key challenge was the requirement for these simulations to accurately reflect real operational environments in terms of network configurations, security protocols, and possible vulnerabilities. By doing so, the platform would not only provide theoretical knowledge but also practical skills that operators could directly apply in their day-to-day work.
+                One of the primary challenges in developing Q-Mission®UCP was to create an immersive environment where cybersecurity operators—from beginners to seasoned professionals—could train effectively. This environment needed to simulate complex, real-world cyber incidents, including ethical hacking scenarios, malware attacks, ransomware, and advanced persistent threats (APTs), allowing users of varying experience levels to engage in meaningful, realistic exercises.
+                </div>
+                <div className={cn("p", styles.subtitle)}>
+                Simulating Real-World Threat Landscapes
                 </div>
                 <div className={cn("p", styles.text)}>
-                    Ensuring that these scenarios felt realistic and were customizable for various industries and threat profiles was essential for helping users develop the adaptability and critical thinking necessary to respond to fast-evolving cybersecurity threats.
+                The goal was to replicate real-world cyberattacks with dynamic simulations that adapted to diverse attack patterns, exposing operators to evolving cyber threats. These simulations had to balance high complexity for advanced users while remaining accessible to learners. A further challenge involved ensuring these scenarios accurately mirrored real operational conditions—such as network configurations, security protocols, and vulnerabilities—providing not only theoretical knowledge but practical, applicable skills for daily cybersecurity work..
+                </div>
+                <div className={cn("p", styles.subtitle)}>
+                Customizable Scenarios for Industry-Specific Threats
+                </div>
+                <div className={cn("p", styles.text)}>
+                Making the scenarios realistic and customizable for different industries and threat profiles was essential for helping users build adaptability and critical thinking skills to respond to fast-changing cybersecurity threats.
                 </div>
             </div>
             <div className={styles.column} data-aos="fade-up">
@@ -37,7 +46,7 @@ const Challenges = ({}: ChallengesProps) => {
                     Simulation module
                 </div>
                 <div className={cn("p", styles.text)}>
-                    This module provides a variety of machines, tools, and scenarios designed to simulate real-time situations, ensuring an authentic practice experience. The machines and tools can be run simultaneously or individually, depending on the user's needs. Additionally, the status of each machine or tool can be monitored, allowing for precise control and a clear view of performance during simulations.
+                The Q-Range module includes diverse tools, machines, and scenarios that simulate real-time incidents, allowing users to execute code and practice in real-time. The status of each machine can be monitored, and users have control over starting, pausing, and resetting scenarios for an authentic, hands-on experience.
                 </div>
                 <Image className={styles.img}
                     src='/images/projects/qmission-simulation1.png'
@@ -49,10 +58,10 @@ const Challenges = ({}: ChallengesProps) => {
                     Simulation module
                 </div>
                 <div className={cn("p", styles.text)}>
-                    When starting a machine or tool, you can view the elapsed time since it began, switch to full-screen mode, restart it to begin again, or stop it entirely.
+                When starting a machine or tool, you can view the elapsed time since it began, switch to full-screen mode, restart it to begin again, or stop it entirely.
                 </div>
                 <div className={cn("p", styles.text)}>
-                    Most importantly, it allows for real-time execution of code or scenarios, ensuring an interactive and authentic practice experience.
+                Most importantly, it allows for real-time execution of code or scenarios, ensuring an interactive and authentic practice experience.
                 </div>
                 <Image className={styles.img}
                     src='/images/projects/qmission-simulation2.png'

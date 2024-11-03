@@ -29,10 +29,10 @@ const Solution = ({}: solutionProps) => {
                         Solution
                     </div>
                     <div className={cn("h2", styles.subtitle)}>
-                    Seamlessly automate lending lines using no-code and AI + Track every step of the process.
+                    Automated, AI-Driven Eligibility Assessment
                     </div>
                     <div className={cn("p", styles.text)}>
-                    To address the challenge of qualification and eligibility, an AI-driven system was developed to automatically analyze users’ financial and banking data, enabling quick and accurate assessments. FastAPI was used to create a flexible and agile architecture, while NextJs ensured a dynamic and responsive user experience. The use of Terraform and DigitalOcean facilitated a scalable infrastructure, ensuring efficient and stable platform performance.
+                    To tackle eligibility assessment and qualification, we developed an AI-powered system that automates financial and banking data analysis, providing fast and accurate investor assessments. FastAPI was used to create a flexible, agile architecture, while Next.js enabled a dynamic, responsive user interface for smooth user interactions. The platform’s scalability and stability were ensured with Terraform and DigitalOcean, supporting a seamless and efficient user experience across all processes.
                     </div>
                 </div>
             </div>

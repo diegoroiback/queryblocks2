@@ -29,31 +29,31 @@ const Solution = ({}: solutionProps) => {
                         Solution
                     </div>
                     <div className={cn("p", styles.strong)}>
-                        To address these challenges, the following solutions were implemented:
+                        To address these challenges, You Might Need Work incorporates the following solutions:
                     </div>
                     <div className={cn("p", styles.strong)}>
                         Customized Time Tracking System:
                     </div>
                     <div className={cn("p", styles.text)}>
-                        A time-tracking feature was developed that allows users to automatically log worked hours directly within the platform. This tool is tailored to the needs of external and remote workers, ensuring accurate time control.
+                        An automated time-tracking feature was designed to log hours directly within the platform, tailored specifically for remote and outsourced workers. This ensures precise time control, enhancing accountability and accuracy.
                     </div>
                     <div className={cn("p", styles.strong)}>
-                        Project Management and Integration:
+                    Seamless Project Management and Integration
                     </div>
                     <div className={cn("p", styles.text)}>
-                        An interface was designed to facilitate the import of projects from management tools such as collaboration platforms. This allows both employees and employers to connect seamlessly, adapting to the tools they already use.
+                    We developed an interface for easy project import from popular management tools, allowing users to integrate their existing workflows. This feature enables smooth connections for both employees and employers, adapting to the tools they already use.
                     </div>
                     <div className={cn("p", styles.strong)}>
-                        Automated Invoicing and Payment:
+                    Automated Invoicing and Payment Processing
                     </div>
                     <div className={cn("p", styles.text)}>
-                        A billing system was integrated to convert tracked time into detailed invoices with just one click. This optimizes the payment process for outsourced work and ensures that payment flows are clear and transparent.
+                    An invoicing system converts tracked time into detailed invoices with a single click, streamlining payments for outsourced work. This system enhances transparency and optimizes the payment process.
                     </div>
                     <div className={cn("p", styles.strong)}>
-                        Employee/Employer Search:
+                    Enhanced Employee/Employer Search Functionality
                     </div>
                     <div className={cn("p", styles.text)}>
-                        A search function was included to connect those looking for job opportunities with those who need workers, facilitating communication and coordination between both parties.
+                    A robust search function connects job seekers with employers, simplifying communication and coordination between parties and supporting efficient talent matching.
                     </div>
                 </div>
             </div>

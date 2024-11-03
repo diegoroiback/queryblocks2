@@ -25,10 +25,12 @@ const Introduction = ({}: introductionProps) => {
                 </div>
                 <div className={styles.content} data-aos="fade-left">
                     <div className={cn("h2", styles.title)}>
-                    Transform your projects with You Might Need Work: effortless time tracking, seamless invoicing, and instant insights, all in one powerful app.
+                    Transform project management with You Might Need Work, the ultimate AI-driven platform for effortless time tracking, seamless invoicing, and instant productivity insights.
                     </div>
                     <div className={cn("p", styles.text)}>
-                    You Might Need Work is an all-in-one time tracking solution designed to efficiently manage multiple projects. It allows teams to record and monitor the time spent on each task and project, generating instant reports that can easily be turned into invoices with just a single click. With an intuitive interface, users can import projects from management tools, add team members, and track time automatically. The platform is designed to adapt to any team, facilitating adoption by integrating with users' favorite tools and allowing management on both mobile and desktop devices.
+                    Built for teams managing multiple projects, You Might Need Work simplifies tracking by automatically recording time on tasks and generating reports that convert to invoices with one click.
+                    <br /><br />
+                    This all-in-one tool integrates seamlessly with popular project management platforms, allowing teams to import projects, add members, and manage productivity across both mobile and desktop. With user-friendly interfaces and flexible integration, You Might Need Work adapts to any team’s workflow, making productivity tracking and project management easier than ever.
                     </div>
                 </div>
             </div>

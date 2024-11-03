@@ -31,7 +31,7 @@ const infoServices = [
         title: 'Technologies',
         content: [
             {
-                name: 'NextJs',
+                name: 'NestJs',
                 url: ''
             },
             {

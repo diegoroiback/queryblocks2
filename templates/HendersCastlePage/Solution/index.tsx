@@ -29,25 +29,28 @@ const Solution = ({}: solutionProps) => {
                         Solution
                     </div>
                     <div className={cn("p", styles.strong)}>
-                        Combat and puzzle-solving mechanics inspired by The Legend of Zelda were developed and implemented, ensuring fluid and challenging gameplay.
-                    </div>
-                    <div className={cn("p", styles.strong)}>
-                        Visual Style:
+                    Game Mechanics
                     </div>
                     <div className={cn("p", styles.text)}>
-                    Unity Shader was used to create a unique and appealing visual style, maintaining a balance between graphic quality and performance.
+                    We developed and implemented combat and puzzle-solving mechanics inspired by The Legend of Zelda, ensuring gameplay remained fluid, challenging, and deeply engaging for players.
                     </div>
                     <div className={cn("p", styles.strong)}>
-                    Engaging Narrative:
+                    Distinct Visual Style
                     </div>
                     <div className={cn("p", styles.text)}>
-                        A story with emotional depth was crafted, where players not only fight to overcome challenges but also work to restore their family's honor, adding an emotional purpose to every action in the game.
+                    Using Unity Shader, we crafted a unique and visually appealing style that balanced high-quality graphics with optimized performance, providing players with an immersive visual experience.
                     </div>
                     <div className={cn("p", styles.strong)}>
-                        Technological Tools:
+                    Engaging, Emotional Narrative
                     </div>
                     <div className={cn("p", styles.text)}>
-                    CodeMagic was employed for automating the development and launch processes, while Unity and C# were used to build the game’s core engine, leveraging best practices for optimization and performance.
+                    An emotionally rich storyline was woven into the gameplay, where players pursue the restoration of their family’s honor. This narrative provided purpose to every action, strengthening the connection between the player and the character’s journey.
+                    </div>
+                    <div className={cn("p", styles.strong)}>
+                    Engaging, Emotional Narrative
+                    </div>
+                    <div className={cn("p", styles.text)}>
+                    We utilized CodeMagic to automate development and deployment processes, ensuring smooth updates and performance optimization. Unity and C# formed the backbone of the game’s engine, leveraging best practices to maximize performance and ensure a seamless player experience.
                     </div>
                 </div>
             </div>

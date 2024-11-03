@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 
 const content = {
     bg: '/images/projects/qmission-bg.jpeg',
-    title: 'Q-mission: A full cyber operations plataform.',
+    title: 'Q-Mission: The Ultimate Cybersecurity Training and Operations Platform',
     logo: '/images/clients/logo-qmission.svg',
     tags: [
         'Cybersecurity',
@@ -29,6 +29,7 @@ const Main = () => {
         <div className={styles.content}>
             <Image className={styles.logo}
                 src={content.logo}
+                alt={content.title}
                 width={119}
                 height={32} />
             <div className={cn("h1", styles.title)} data-aos="fade-up">{content.title}</div>

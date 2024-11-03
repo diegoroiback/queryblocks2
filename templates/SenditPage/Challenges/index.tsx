@@ -19,19 +19,25 @@ const Challenges = ({}: ChallengesProps) => {
                 Challenges
             </div>
             <div className={styles.column} data-aos="fade-up">
-                <div className={cn("p", styles.text)}>
-                    The biggest challenge we faced in developing Sendit was building an infrastructure completely free from server storage, which was essential to uphold the promise of absolute privacy. The challenge was to design a system that facilitated file transfers without ever storing them in the cloud, nor recording any information about their content, size, or type. This approach required an advanced peer-to-peer (p2p) solution, where files would travel directly between users without passing through intermediary servers.
+                <div className={cn("p", styles.subtitle)}>
+                Creating a Cloud-Free, Privacy-First File Transfer System
                 </div>
                 <div className={cn("p", styles.text)}>
-                    Additionally, achieving compatibility with the desktop version was another key challenge. We needed to ensure that the transfer experience was equally smooth and secure, regardless of the device the user was operating. Synchronizing between mobile and desktop devices also meant designing a robust architecture that guaranteed a consistent user experience while maintaining high security standards.
+                One of the most significant challenges in developing Sendit was building an infrastructure completely free of server storage, crucial for ensuring absolute user privacy. This required designing a system that enabled file transfers without any cloud storage or record-keeping of file content, size, or type. To achieve this, we needed a sophisticated peer-to-peer (P2P) solution that allowed files to move directly between users, bypassing intermediary servers.
+                </div>
+                <div className={cn("p", styles.subtitle)}>
+                Cross-Device Compatibility and Consistent User Experience
+                </div>
+                <div className={cn("p", styles.text)}>
+                Ensuring smooth and secure file transfers across both mobile and desktop versions presented another challenge. The platform needed to synchronize seamlessly between devices, providing users with a consistent experience regardless of their operating environment, while maintaining strict security protocols.
                 </div>
             </div>
             <div className={styles.column} data-aos="fade-up">
                 <div className={cn("p", styles.title2)}>
-                    Flow for the user to send a file.
+                Simple and Secure User Flow
                 </div>
                 <div className={cn("p", styles.text)}>
-                    The user flow for sending a file is summarized in 3 simple steps: selecting the recipients, adding the file to send, and that's it! Just wait for the transfer to complete.
+                Our goal was to make the user experience straightforward, distilling the file-sharing process into three steps: select recipients, add the file, and initiate the transfer. This simplicity needed to be achieved without compromising privacy or security.
                 </div>
                 <Image className={styles.img}
                     src='/images/projects/sendit-documentation.png'

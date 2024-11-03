@@ -25,10 +25,12 @@ const Introduction = ({}: introductionProps) => {
                 </div>
                 <div className={styles.content} data-aos="fade-left">
                     <div className={cn("h2", styles.title)}>
-                        ATUA is a digital platform that connects travelers and car owners in Argentina, offering vehicle rentals at competitive prices, with a 100% online, secure, and intermediary-free process.
+                    ATUA is Argentina's premier digital platform for peer-to-peer car sharing, connecting travelers directly with vehicle owners for flexible, affordable rentals—all with a 100% secure, online process.
                     </div>
                     <div className={cn("p", styles.text)}>
-                        ATUA is a digital peer-to-peer car rental platform designed to offer users in Argentina the opportunity to rent vehicles at competitive prices, without intermediaries. The system allows travelers to connect directly with local hosts and manage the entire rental process online, from booking to payment. ATUA also provides vehicle owners with the opportunity to earn extra income by listing their cars on the platform. With over 2000 registered users and more than 1500 completed reservations, ATUA has positioned itself as an innovative alternative in the car rental market in Argentina. The platform includes advanced features such as real-time vehicle tracking, access to car inspections, and automated income management.
+                    Designed to eliminate intermediaries, ATUA enables travelers to book and pay for rentals easily, while local car owners can earn income by listing their vehicles on the platform.
+                    <br /><br />
+                    With over 2000 registered users and 1500+ completed bookings, ATUA has quickly become a trusted alternative in Argentina’s car rental market. The platform offers advanced features like real-time vehicle tracking, easy-to-access car inspection details, and automated income management, making it a seamless experience for both renters and car owners.
                     </div>
                 </div>
             </div>

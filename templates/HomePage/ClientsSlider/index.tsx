@@ -49,7 +49,7 @@ const ClientsSlider = ({}: ClientsSliderProps) => {
                     </div>
                     <div className={styles.info} data-aos="fade-left">
                         <p className={styles.paragraph}>
-                            Top-notch software, award-winning design, revolutionary mobile apps. Listen to our clients and discover what’s possible for you.
+                        Top-notch software, award-winning design, revolutionary mobile apps. Listen to our clients and discover what’s possible for you.
                         </p>
                         <a className={styles.link}>See case studies</a>
                     </div>

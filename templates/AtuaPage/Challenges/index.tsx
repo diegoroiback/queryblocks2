@@ -19,25 +19,40 @@ const Challenges = ({}: ChallengesProps) => {
                 Challenges
             </div>
             <div className={styles.column} data-aos="fade-up">
-                <div className={cn("p", styles.text)}>
-                    One of the biggest challenges in developing ATUA was creating a peer-to-peer (P2P) business model robust enough to seamlessly facilitate car rentals between individuals. However, the complexity increased when making this model compatible with traditional car rental companies, which required integrating not only privately-owned vehicles but also fleets from more established rental agencies. This process demanded balancing the flexibility and simplicity sought by individual users with the more structured and formal needs of rental companies.
+                <div className={cn("p", styles.subtitle)}>
+                Building a Robust Peer-to-Peer Car Rental Model
                 </div>
                 <div className={cn("p", styles.text)}>
-                    Additionally, the platform had to integrate multiple insurance systems to ensure protection for both car owners and renters in case of accidents or damage. Finding a way to make this integration automatic and frictionless for the end user was another crucial challenge.
+                One of the major challenges in developing ATUA was designing a peer-to-peer (P2P) business model capable of seamlessly facilitating car rentals between individuals. This challenge grew as the model had to be compatible with traditional car rental companies, integrating both privately-owned vehicles and agency fleets. Balancing the flexible needs of individual users with the formal requirements of established rental companies required careful design to create a platform suitable for both.
+                </div>
+                <div className={cn("p", styles.subtitle)}>
+                Transparent Rental Details and User Experience
                 </div>
                 <div className={cn("p", styles.text)}>
-                    Lastly, the payment methods needed to offer a flexible and accessible system that would allow for quick and secure transactions for both renters and car owners. Achieving this required implementing multiple payment gateways and financial systems that not only supported local payments but could also scale to a global operation if needed, all within a fully digital and secure environment.
+                Creating a user-friendly Vehicle Rental Details Page was essential to ensure customers could schedule rentals smoothly, view comprehensive payment breakdowns, and experience full transparency, preventing any booking surprises.
+                </div>
+                <div className={cn("p", styles.subtitle)}>
+                Insurance Integration for Car Owners and Renters
+                </div>
+                <div className={cn("p", styles.text)}>
+                Another critical challenge was integrating multiple insurance providers to protect both car owners and renters in case of accidents or damage. This integration had to be automated and seamless, offering end users a frictionless experience while maintaining high security and reliability.
+                </div>
+                <div className={cn("p", styles.subtitle)}>
+                Flexible and Secure Payment System
+                </div>
+                <div className={cn("p", styles.text)}>
+                Lastly, developing a versatile payment solution was essential. The platform needed to support quick and secure transactions for both renters and vehicle owners, with multiple payment gateways accommodating local and potentially global transactions, all within a secure digital environment.
                 </div>
             </div>
             <div className={styles.column} data-aos="fade-up">
                 <div className={cn("p", styles.title2)}>
-                    One of the big challenges was to make it simple.
+                One of the big challenges was to make it simple.
                 </div>
                 <div className={cn("p", styles.subtitle)}>
                     Vehicle Rental Details Page
                 </div>
                 <div className={cn("p", styles.text)}>
-                    On this screen, we focus on displaying all the useful information the customer needs to schedule their rental without any issues. We also provide a detailed breakdown of the payment before confirming the booking, ensuring complete transparency and avoiding surprises.
+                On this screen, we focus on displaying all the useful information the customer needs to schedule their rental without any issues. We also provide a detailed breakdown of the payment before confirming the booking, ensuring complete transparency avoiding surprises.
                 </div>
                 <Image className={styles.img}
                     src='/images/projects/atua-documentation.png'

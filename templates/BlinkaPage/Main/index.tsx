@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 
 const content = {
     bg: '/images/projects/blinka-bg.jpeg',
-    title: 'Blinka: Mortagage origination and management.',
+    title: 'Blinka: Automated Mortgage Origination and Management.',
     logo: '/images/projects/logo-blinka.svg',
     tags: [
         'Fintech',
@@ -28,6 +28,7 @@ const Main = () => {
         <div className={styles.content}>
             <Image className={styles.logo}
                 src={content.logo}
+                alt={content.title}
                 width={119}
                 height={32} />
             <div className={cn("h1", styles.title)} data-aos="fade-up">{content.title}</div>

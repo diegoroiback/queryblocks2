@@ -50,6 +50,10 @@ const infoServices = [
                 name: 'Grpc',
                 url: ''
             },
+            {
+                name: 'GCloud',
+                url: ''
+            },
         ]
     }
 ]

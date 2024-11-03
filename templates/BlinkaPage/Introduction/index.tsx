@@ -25,10 +25,12 @@ const Introduction = ({}: introductionProps) => {
                 </div>
                 <div className={styles.content} data-aos="fade-left">
                     <div className={cn("h2", styles.title)}>
-                        Blinka is a platform that automates the origination and management of mortgages using no-code technology and artificial intelligence, integrating all stakeholders in the process to ensure traceability and efficiency.
+                    Blinka is an innovative no-code platform that automates mortgage origination and management, streamlining the entire lending process with artificial intelligence.
                     </div>
                     <div className={cn("p", styles.text)}>
-                        Blinka is an application designed to revolutionize the way mortgages are originated and managed. It uses a no-code approach and artificial intelligence to automate the entire lending process. The platform integrates all stakeholders involved in the mortgage process, providing full traceability and convenience at every step. Users can monitor and manage their journey, while administrators gain real-time insights into every operation. Blinka also includes an automated accounting system, enabling effortless financial tracking without manual work, thus ensuring efficiency and control throughout the process.
+                    Designed for complete traceability and efficiency, Blinka connects all stakeholders—from applicants to lenders—within a seamless, user-friendly environment.
+                    <br /><br />
+                    With Blinka, users can easily monitor their mortgage journey, while administrators access real-time insights and data at each stage. The platform’s automated accounting feature simplifies financial tracking, removing the need for manual input and enhancing overall control and efficiency. Blinka transforms mortgage management, making the process faster, transparent, and more efficient for everyone involved.
                     </div>
                 </div>
             </div>

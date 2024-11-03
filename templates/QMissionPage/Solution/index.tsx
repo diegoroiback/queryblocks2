@@ -29,13 +29,19 @@ const Solution = ({}: solutionProps) => {
                         Solution
                     </div>
                     <div className={cn("h2", styles.subtitle)}>
-                        With more than 2,200 cyber incidents occurring daily worldwide, the threat landscape is more dynamic than ever. 
-                        Q-Mission is the platform that will help address this.
+                    With over 2,200 cyber incidents reported daily worldwide, Q-Mission addresses the need for high-quality cybersecurity training through realistic, controlled simulations, and real life opperations.
+                    </div>
+                    <div className={cn("p", styles.strong)}>
+                    The DevOps and Q-Range Modules
                     </div>
                     <div className={cn("p", styles.text)}>
-                    To address these challenges, a secure and controlled environment was developed through the DevOps module, with the Q-Range Cyber Range at its core. This tool enabled the creation of realistic simulation scenarios that leveraged a vast arsenal of cyber tools, providing operators with practical training in controlled environments.
-                    <br /><br />
-                    Additionally, the platform was built using modern technologies such as FastAPI, Next.js, Terraform, Cloudflare, Digital Ocean, and Rest Framework. These tools allowed for the development of a robust, scalable, and secure infrastructure, ensuring optimal platform performance in both advanced simulations and the daily operational management of organizations.
+                    To meet these challenges, Q-Mission®UCP was developed with a secure and controlled environment centered on the Q-Range Cyber Range, which enables the creation of realistic simulation scenarios. This module utilizes a comprehensive suite of cyber tools, offering operators hands-on experience in a secure environment to build critical skills.
+                    </div>
+                    <div className={cn("p", styles.strong)}>
+                    Powered by Advanced Technology
+                    </div>
+                    <div className={cn("p", styles.text)}>
+                    Built on modern technologies like FastAPI, Next.js, Terraform, Cloudflare, DigitalOcean, and REST Framework, the platform offers a robust, scalable, and secure infrastructure. These technologies ensure optimal platform performance, supporting both complex simulations and everyday cybersecurity operations for organizations.
                     </div>
                 </div>
             </div>

@@ -25,7 +25,9 @@
 
 .content
     width: 48%
-    display: inline-block
+    display: flex
+    flex-direction: column
+    gap: 30px
     +t
         width: 100%
 
@@ -34,7 +36,6 @@
     font-size: 40px
     line-height: 1.1
     font-weight: 800
-    margin-bottom: 30px
     +m
         margin-right: 0
 
@@ -43,9 +44,12 @@
     font-size: 32px
     line-height: 1.1
     font-weight: 600
-    margin-bottom: 30px
     +m
         margin-right: 0
 
 .text
     color: $n9
+
+.strong
+    color: $n9
+    font-weight: 700

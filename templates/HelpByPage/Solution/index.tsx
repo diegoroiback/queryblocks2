@@ -29,31 +29,31 @@ const Solution = ({}: solutionProps) => {
                         Solution
                     </div>
                     <div className={cn("h2", styles.subtitle)}>
-                    With these solutions, HelpBy stands as a key tool in the digital transformation of healthcare, making high-quality healthcare more accessible and efficient.
+                    HelpBy is designed to meet the demands of digital healthcare transformation, providing secure, accessible, and efficient healthcare solutions.
                     </div>
                     <div className={cn("p", styles.strong)}>
                     Robust and Secure Technology
                     </div>
                     <div className={cn("p", styles.text)}>
-                    Using advanced tools such as Django, Flutter, Terraform, GCloud, Firebase, and Grpc, we created a secure, scalable, and efficient platform to manage all medical data in real-time. Firebase, in particular, ensured the secure handling of medical records, while Terraform and GCloud provided a flexible and reliable infrastructure.
+                    We utilized advanced technologies like Django, Flutter, Terraform, Google Cloud, Firebase, and gRPC to create a secure, scalable platform that manages medical data in real time. Firebase ensures secure medical record handling, while Terraform and Google Cloud provide flexible, reliable infrastructure.
                     </div>
                     <div className={cn("p", styles.strong)}>
                     User-Centered Platform
                     </div>
                     <div className={cn("p", styles.text)}>
-                    We implemented an intuitive interface for both doctors and patients, simplifying tasks such as appointment scheduling, consultations, and sending personalized reminders to improve treatment adherence.
+                    Our intuitive interface for both doctors and patients streamlines key functions like appointment scheduling, consultations, and personalized reminders, effectively supporting patient treatment adherence.
                     </div>
                     <div className={cn("p", styles.strong)}>
                     Successful Clinical Validation
                     </div>
                     <div className={cn("p", styles.text)}>
-                    The system was tested in renowned hospitals like the Hospital  Guasmo Sur. Guayaquil, where its effectiveness was proven, tripling the number of patients with high adherence to treatment after six months. The results were published in the HECAM medical journal, supporting the solution’s effectiveness.
+                    Our system’s effectiveness was validated in reputable hospitals, including Hospital Guasmo Sur in Guayaquil, where it tripled the number of high-adherence patients within six months. Results published in the HECAM Medical Journal further support its effectiveness.
                     </div>
                     <div className={cn("p", styles.strong)}>
                     Notifications and Monitoring
                     </div>
                     <div className={cn("p", styles.text)}>
-                    Automatic reminders and an integrated messaging system between doctors and patients were added, significantly improving communication, while real-time statistics allowed doctors to monitor their patients' treatment adherence.
+                    We implemented automatic reminders and a messaging system to facilitate doctor-patient communication. Real-time statistics empower doctors to monitor treatment adherence, significantly improving patient outcomes.
                     </div>
                 </div>
             </div>

@@ -19,11 +19,17 @@ const Challenges = ({}: ChallengesProps) => {
                 Challenges
             </div>
             <div className={styles.column} data-aos="fade-up">
-                <div className={cn("p", styles.text)}>
-                    The most significant challenge in the project was developing a robust system capable of evaluating the eligibility of individuals seeking to invest in the real estate sector. This system needed to assess and accurately rate potential investors based on a wide array of financial data, including their banking transactions, business activities, and investment histories. The challenge lay not only in gathering and processing these disparate data sources but also in ensuring that the evaluation criteria were flexible and comprehensive enough to account for the diverse financial backgrounds of users.
+                <div className={cn("p", styles.subtitle)}>
+                Building an Accurate Eligibility Assessment System for Real Estate Investments
                 </div>
                 <div className={cn("p", styles.text)}>
-                Moreover, the system had to be precise and efficient, providing reliable assessments without sacrificing speed or user experience. This required implementing sophisticated algorithms and AI models to automate the process, reduce the risk of errors, and minimize the need for manual intervention. Additionally, given the sensitive nature of financial data, ensuring the security and privacy of user information throughout the analysis process was critical. The complexity of designing a solution that was both technically advanced and user-friendly made this one of the most demanding aspects of the project.
+                The primary challenge in this project was to develop a comprehensive system that evaluates the eligibility of individuals interested in real estate investment. This system needed to analyze a wide range of financial data—from banking transactions and business activities to investment histories—ensuring a precise rating of each potential investor. Gathering, processing, and integrating these diverse data sources required an adaptable and thorough evaluation criteria that could accommodate the varied financial backgrounds of users..
+                </div>
+                <div className={cn("p", styles.subtitle)}>
+                Balancing Precision, Speed, and User Experience
+                </div>
+                <div className={cn("p", styles.text)}>
+                It was crucial for the system to deliver fast, reliable assessments without sacrificing user experience. This required sophisticated algorithms and AI models to automate data analysis, reduce errors, and minimize manual intervention. Additionally, due to the sensitive nature of financial data, safeguarding user privacy and data security throughout the assessment process was essential, adding complexity to the project and necessitating a technically advanced yet user-friendly solution.
                 </div>
             </div>
             <div className={styles.column} data-aos="fade-up">

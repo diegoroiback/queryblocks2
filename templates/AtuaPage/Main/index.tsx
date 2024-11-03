@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 
 const content = {
     bg: '/images/projects/atua-bg.jpeg',
-    title: 'ATUA: Peer-to-peer car sharing, on your terms',
+    title: 'ATUA: Peer-to-Peer Car Sharing, on Your Terms',
     logo: '/images/projects/logo-atua.svg',
     tags: [
         'Car-sharing',
@@ -29,6 +29,7 @@ const Main = () => {
         <div className={styles.content}>
             <Image className={styles.logo}
                 src={content.logo}
+                alt={content.title}
                 width={119}
                 height={32} />
             <div className={cn("h1", styles.title)} data-aos="fade-up">{content.title}</div>

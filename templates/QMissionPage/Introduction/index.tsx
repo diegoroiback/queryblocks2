@@ -25,10 +25,12 @@ const Introduction = ({}: introductionProps) => {
                 </div>
                 <div className={styles.content} data-aos="fade-left">
                     <div className={cn("h2", styles.title)}>
-                        Q-Mission® creates a continuous cycle of growth, empowering your organization to strengthen its cybersecurity posture. Our all-in-one platform ensures you can learn, train, and operate at the highest level, every step of the way.
+                    Q-Mission® is an advanced platform combining cybersecurity e-learning with real-world operations tools to enhance your organization’s cyber resilience.
                     </div>
                     <div className={cn("p", styles.text)}>
-                        Q-Mission®UCP is a comprehensive platform designed to train the cybersecurity workforce, from learning to executing real-world operations. The platform combines continuous training, advanced simulations, and cyber operations to help organizations build and maintain a strong cybersecurity posture. With key modules such as TrainOps, DevOps, SecOps, and InfOps, Q-Mission®UCP allows both experts and beginners to face real cybersecurity challenges through simulations, operational practice, and controlled developments.
+                    Through an integrated approach, Q-Mission® allows teams to not only learn but actively engage in launching and managing live cyber operations.
+                    <br /><br />
+                    Designed for continuous cybersecurity training and real-world operational readiness, Q-Mission®UCP offers modules like TrainOps, DevOps, SecOps, and InfOps, providing users—both experts and newcomers—with hands-on practice in real cybersecurity scenarios. Teams can execute cyber operations, follow critical processes, and sharpen their skills using embedded tools in a controlled environment, ensuring a robust cybersecurity posture at every level.
                     </div>
                 </div>
             </div>
