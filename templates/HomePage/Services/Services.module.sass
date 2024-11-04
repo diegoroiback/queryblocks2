@@ -3,6 +3,8 @@
 .wrapper
     padding-top: 100px
     overflow: hidden
+    +d
+        padding-top: 50px
 
 .head
     display: flex
@@ -10,6 +12,8 @@
     margin: 0 auto 100px
     align-items: flex-start
     justify-content: space-between
+    +d
+        margin-bottom: 50px
     +m
         max-width: 100%
         text-align: left
@@ -51,12 +55,13 @@
     transition: padding .5s, background .5s
     background: $n8
     &:hover
-        background: $n7
-        padding-bottom: 80px
-        padding-top: 80px
+        @media (min-width: 1200px)
+            background: $n7
+            padding-bottom: 80px
+            padding-top: 80px
     +d
-        padding-left: 50px
-        padding-right: 50px
+        background: $n7
+        padding: 50px
     +s
         padding-left: 20px
         padding-right: 20px
