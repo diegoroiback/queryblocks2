@@ -17,7 +17,7 @@ class MyDocument extends Document {
             <Html>
                 <Head>
                     <meta
-                        content="Epic landing page UI Design Kit for Blockchain, Crypto"
+                        content="We ideate, design, and develop powerful software. Leap into the future with a team trusted by the most exciting upcoming companies."
                         name="Query Blocks"
                     />
                     <meta
@@ -25,7 +25,7 @@ class MyDocument extends Document {
                         property="og:title"
                     />
                     <meta
-                        content="Epic landing page UI Design Kit for Blockchain, Crypto"
+                        content="We ideate, design, and develop powerful software. Leap into the future with a team trusted by the most exciting upcoming companies."
                         property="og:description"
                     />
                     <meta

@@ -39,12 +39,14 @@ const Challenges = ({}: ChallengesProps) => {
                 </div>
             </div>
             <div className={styles.column} data-aos="fade-up">
-                <Image className={styles.img}
-                    src='/images/projects/handers-castle-documentation.png'
-                    width={592}
-                    height={370}
-                    alt={'Q-mission simulation'}
-                />
+                <div className={styles.image}>
+                    <Image className={styles.img}
+                        src='/images/projects/henders-castle-documentation.png'
+                        width={765}
+                        height={449}
+                        alt={'Q-mission simulation'}
+                    />
+                </div>
             </div>
         </div>
     </div>

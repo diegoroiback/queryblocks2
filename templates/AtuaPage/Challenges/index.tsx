@@ -54,12 +54,14 @@ const Challenges = ({}: ChallengesProps) => {
                 <div className={cn("p", styles.text)}>
                 On this screen, we focus on displaying all the useful information the customer needs to schedule their rental without any issues. We also provide a detailed breakdown of the payment before confirming the booking, ensuring complete transparency avoiding surprises.
                 </div>
-                <Image className={styles.img}
-                    src='/images/projects/atua-documentation.png'
-                    width={592}
-                    height={401}
-                    alt={'Q-mission simulation'}
-                />
+                <div className={styles.image}>
+                    <Image className={styles.img}
+                        src='/images/projects/atua-documentation.png'
+                        width={233}
+                        height={497}
+                        alt={'Q-mission simulation'}
+                    />
+                </div>
             </div>
         </div>
     </div>

@@ -9,6 +9,7 @@ export const team = [
         position: "CTO & Co-Founder",
         photo: "/images/team/valentin-castillo.png",
         delay: 200,
+        bgSquare: '#fff'
     },
     {
         name: "Andres Londoño",

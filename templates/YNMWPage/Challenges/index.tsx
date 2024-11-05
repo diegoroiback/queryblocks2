@@ -39,12 +39,14 @@ const Challenges = ({}: ChallengesProps) => {
                 <div className={cn("p", styles.text)}>
                 One of the most significant challenges was simplifying the user interface. Consolidating all functionalities onto a single, well-organized page was essential, allowing users of all technological backgrounds to navigate the app with ease.
                 </div>
-                <Image className={styles.img}
-                    src='/images/projects/ynmw-documentation.png'
-                    width={592}
-                    height={561}
-                    alt={'Q-mission simulation'}
-                />
+                <div className={styles.image}>
+                    <Image className={styles.img}
+                        src='/images/projects/ynmw-documentation.png'
+                        width={1428}
+                        height={1505}
+                        alt={'Q-mission simulation'}
+                    />
+                </div>
             </div>
         </div>
     </div>

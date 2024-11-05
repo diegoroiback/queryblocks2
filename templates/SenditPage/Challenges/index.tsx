@@ -39,12 +39,14 @@ const Challenges = ({}: ChallengesProps) => {
                 <div className={cn("p", styles.text)}>
                 Our goal was to make the user experience straightforward, distilling the file-sharing process into three steps: select recipients, add the file, and initiate the transfer. This simplicity needed to be achieved without compromising privacy or security.
                 </div>
-                <Image className={styles.img}
-                    src='/images/projects/sendit-documentation.png'
-                    width={592}
-                    height={265}
-                    alt={'Q-mission simulation'}
-                />
+                <div className={styles.image}>
+                    <Image className={styles.img}
+                        src='/images/projects/sendit-documentation.png'
+                        width={1368}
+                        height={615}
+                        alt={'Q-mission simulation'}
+                    />
+                </div>
             </div>
         </div>
     </div>

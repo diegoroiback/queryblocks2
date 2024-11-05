@@ -39,7 +39,7 @@ const ClientsSlider = ({}: ClientsSliderProps) => {
     }, []);
 
     return (
-        <div className={styles.wrapper}>
+        <div className={styles.wrapper} id='community'>
             <div className={cn("container", styles.container)}>
                 <div className={styles.head} data-aos="fade-right">
                     <div className={styles.titles}>

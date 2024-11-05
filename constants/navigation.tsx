@@ -9,15 +9,15 @@ export const headerNavigation = [
     },
     {
         title: "Community",
-        url: "/communuty"
+        url: "/#community"
     },
     {
         title: "Services",
-        url: "/services",
+        url: "/#services",
     },
     {
         title: "About us",
-        url: "/aboutUs",
+        url: "/#team",
     },
     {
         title: "Contact",

@@ -98,7 +98,7 @@ const Menu = ({ navigation, onClick }: MenuProps) => {
                                 onClick={(e) => e.stopPropagation()}
                             >
                                 <div className={styles.content}>
-                                    <nav className={styles.nav}>
+                                    <nav className={styles.nav} onClick={handleClick}>
                                         {navigation.map((link, index) =>
                                             link.external ? (
                                                 <a
@@ -138,11 +138,11 @@ const Menu = ({ navigation, onClick }: MenuProps) => {
                                                 Email
                                             <a
                                                 className={styles.email}
-                                                href="mailto:contact@queryblocks.io"
+                                                href="mailto:info@queryblocks.io"
                                                 target="_blank"
                                                 rel="noreferrer"
                                             >
-                                                contact@queryblocks.io
+                                                info@queryblocks.io
                                             </a>
                                             </div>
                                         </div>

@@ -19,8 +19,8 @@ const Solution = ({}: solutionProps) => {
                 <div className={styles.image} data-aos="flip-right">
                     <Image className={styles.img}
                         src='/images/projects/blinka-solution.png'
-                        width={632}
-                        height={394}
+                        width={572}
+                        height={424}
                         alt={'Blinka Solution'}
                     />
                 </div>

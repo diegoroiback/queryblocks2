@@ -5,9 +5,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const content = {
-    bg: '/images/projects/handers-castle-bg.jpeg',
+    bg: '/images/projects/henders-castle-bg.jpeg',
     title: 'Hender’s Castle: A Thrilling 3D Action-Adventure Game.',
-    logo: '/images/projects/logo-handers-castle.svg',
+    logo: '/images/projects/logo-henders-castle.svg',
     tags: [
         'Action',
         'Adventure',

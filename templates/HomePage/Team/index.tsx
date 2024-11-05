@@ -16,7 +16,7 @@ const Team = ({}: TeamProps) => {
     });
 
     return (
-        <div className={cn("section", styles.section)}>
+        <div className={cn("section", styles.section)} id="team">
             <div className={cn("container", styles.container)}>
                 <div className={styles.head}>
                     <div className={styles.titles} data-aos="fade-up">
@@ -39,9 +39,12 @@ const Team = ({}: TeamProps) => {
                         >
                             <div
                                 className={styles.square}
-                                style={{
+                                style={
+                                    man.bgSquare ? ({
+                                    backgroundColor: man.bgSquare,
+                                }) : ({
                                     backgroundColor: "#2EB4B0",
-                                }}
+                                })}
                             ></div>
                             <div className={styles.photo}>
                                 <div className={styles.inner}>

@@ -18,9 +18,9 @@ const Introduction = ({}: introductionProps) => {
                 <div className={styles.image} data-aos="fade-right">
                     <Image className={styles.img}
                         src='/images/projects/sendit-intro.png'
-                        width={590}
-                        height={436}
-                        alt={'text'}
+                        width={2010}
+                        height={1485}
+                        alt={'Sendit'}
                     />
                 </div>
                 <div className={styles.content} data-aos="fade-left">

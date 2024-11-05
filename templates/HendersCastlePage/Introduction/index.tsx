@@ -17,10 +17,10 @@ const Introduction = ({}: introductionProps) => {
             <div className={cn("container", styles.container)}>
                 <div className={styles.image} data-aos="fade-right">
                     <Image className={styles.img}
-                        src='/images/projects/handers-castle-intro.png'
-                        width={590}
-                        height={524}
-                        alt={'text'}
+                        src='/images/projects/henders-castle-intro.png'
+                        width={1649}
+                        height={1548}
+                        alt={'Henders castle'}
                     />
                 </div>
                 <div className={styles.content} data-aos="fade-left">

@@ -25,13 +25,13 @@ const Footer = ({}: FooterProps) => {
                                 <p className={styles.categorie_title}>Address 1</p>
                                 <ul className={styles.list}>
                                     <li>
-                                        <p className={styles.link}>1234 Elm Street</p>
+                                        <p className={styles.link}>1645 E Hwy 193</p>
                                     </li>
                                     <li>
-                                        <p className={styles.link}>Suite 200</p>
+                                        <p className={styles.link}>Suite 103</p>
                                     </li>
                                     <li>
-                                        <p className={styles.link}>Springfield, USA</p>
+                                        <p className={styles.link}>Layton, UT 84040</p>
                                     </li>
                                 </ul>
                             </div>
@@ -39,13 +39,10 @@ const Footer = ({}: FooterProps) => {
                                 <p className={styles.categorie_title}>Contact</p>
                                 <ul className={styles.list}>
                                     <li>
-                                        <p className={styles.link}>Contact@queryblocks.io</p>
+                                        <p className={styles.link}>info@queryblocks.io</p>
                                     </li>
                                     <li>
-                                        <p className={styles.link}>PL: +55 555 555 555</p>
-                                    </li>
-                                    <li>
-                                        <p className={styles.link}>UK: +55 555 555 555</p>
+                                        <p className={styles.link}>COL: +57 304 4087573</p>
                                     </li>
                                 </ul>
                             </div>
@@ -95,13 +92,13 @@ const Footer = ({}: FooterProps) => {
                         <div className={styles.copyright}>
                             © 2024 Query Blocks. All rights reserved.
                         </div>
-                        <div className={styles.documents}>
+                        {/* <div className={styles.documents}>
                             {documents.map((document, index) => (
                                 <Link href={document.url} key={index}>
                                     <a className={styles.document}>{document.title}</a>
                                 </Link>
                             ))}
-                        </div>
+                        </div> */}
                         <Socials />
                     </div>
                 </div>

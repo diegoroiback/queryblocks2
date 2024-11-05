@@ -19,8 +19,8 @@ const Solution = ({}: solutionProps) => {
                 <div className={styles.image} data-aos="flip-right">
                     <Image className={styles.img}
                         src='/images/projects/qmission-solution.png'
-                        width={632}
-                        height={415}
+                        width={2528}
+                        height={1556}
                         alt={'text'}
                     />
                 </div>

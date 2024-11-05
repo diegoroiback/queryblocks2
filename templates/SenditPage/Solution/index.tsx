@@ -19,8 +19,8 @@ const Solution = ({}: solutionProps) => {
                 <div className={styles.image} data-aos="flip-right">
                     <Image className={styles.img}
                         src='/images/projects/sendit-solution.png'
-                        width={590}
-                        height={503}
+                        width={2202}
+                        height={1425}
                         alt={'Atua Solution'}
                     />
                 </div>

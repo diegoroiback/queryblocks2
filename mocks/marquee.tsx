@@ -1,6 +1,6 @@
 export const marquee = [
     {
-        title: "Team Argmentation",
+        title: "Team Augmentation",
         url: "#"
     },
     {

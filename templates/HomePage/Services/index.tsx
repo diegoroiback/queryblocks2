@@ -19,7 +19,7 @@ const Services = ({}: ServicesProps) => {
     }
 
     return (
-        <div className={styles.wrapper}>
+        <div className={styles.wrapper} id='services'>
             <div className={cn("container", styles.container)}>
                 <div className={styles.head} data-aos="fade-up">
                     <div className={styles.titles}>

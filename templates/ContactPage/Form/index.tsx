@@ -84,7 +84,7 @@ const Form = ({}: FormProps) => {
             ) : (
                 <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
                     <fieldset className={styles.fieldset}>
-                        <label className={styles.label}>Categoría:</label>
+                        <label className={styles.label}>My product industry is::</label>
                         <div className={styles.tags}>
                             {['All', 'Fintech', 'Banking', 'Healthcare', 'Entertaiment', 'Video Games', 'Blockchain'].map((category) => (
                                 <button
@@ -148,7 +148,7 @@ const Form = ({}: FormProps) => {
                     </fieldset>
 
                     <fieldset className={styles.fieldset}>
-                        <label className={styles.label}>Archivo: <span className={styles.optional}>(Optional)</span></label>
+                        <label className={styles.label}>Add files you'd like to share <span className={styles.optional}>(Optional)</span></label>
                         <div className={styles.file} {...getRootProps({})}>
                             <input {...getInputProps()} />
                             <HiOutlinePaperClip />
@@ -180,7 +180,7 @@ const Form = ({}: FormProps) => {
                             <span className={styles.error}>Error sending the form</span>
                         </fieldset>
                     )}
-                    <p className={styles.text_data}>The administrator of your personal data is Query Blocks sp. z o.o. sp.k., with its registered office in Kraków at Zabłocie 43A, 30 - 701. We process provided information in order to answer your questions, contact you and conduct business communication.</p>
+                    <p className={styles.text_data}>The administrator of your personal data is Query Blocks, with its registered office in 1645 E Hwy 193, Suite 103, Layton, UT 84040. We process provided information in order to answer your questions, contact you and conduct business communication.</p>
                 </form>
             )}
         </div>

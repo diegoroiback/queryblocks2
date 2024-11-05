@@ -48,12 +48,14 @@ const Challenges = ({}: ChallengesProps) => {
                 <div className={cn("p", styles.text)}>
                 The Q-Range module includes diverse tools, machines, and scenarios that simulate real-time incidents, allowing users to execute code and practice in real-time. The status of each machine can be monitored, and users have control over starting, pausing, and resetting scenarios for an authentic, hands-on experience.
                 </div>
-                <Image className={styles.img}
-                    src='/images/projects/qmission-simulation1.png'
-                    width={592}
-                    height={498}
-                    alt={'Q-mission simulation'}
-                />
+                <div className={styles.image}>
+                    <Image className={styles.img}
+                        src='/images/projects/qmission-simulation1.png'
+                        width={1434}
+                        height={1244}
+                        alt={'Q-mission simulation'}
+                    />
+                </div>
                 <div className={cn("p", styles.subtitle)}>
                     Simulation module
                 </div>
@@ -63,12 +65,14 @@ const Challenges = ({}: ChallengesProps) => {
                 <div className={cn("p", styles.text)}>
                 Most importantly, it allows for real-time execution of code or scenarios, ensuring an interactive and authentic practice experience.
                 </div>
-                <Image className={styles.img}
-                    src='/images/projects/qmission-simulation2.png'
-                    width={592}
-                    height={284}
-                    alt={'Q-mission simulation'}
-                />
+                <div className={styles.image}>
+                    <Image className={styles.img}
+                        src='/images/projects/qmission-simulation2.png'
+                        width={1432}
+                        height={672}
+                        alt={'Q-mission simulation'}
+                    />
+                </div>
             </div>
         </div>
     </div>

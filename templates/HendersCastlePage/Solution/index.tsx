@@ -18,9 +18,9 @@ const Solution = ({}: solutionProps) => {
             <div className={cn("container", styles.container)}>
                 <div className={styles.image} data-aos="flip-right">
                     <Image className={styles.img}
-                        src='/images/projects/handers-castle-solution.png'
-                        width={590}
-                        height={436}
+                        src='/images/projects/henders-castle-solution.png'
+                        width={734}
+                        height={475}
                         alt={'Help By'}
                     />
                 </div>

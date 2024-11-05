@@ -19,8 +19,7 @@ const NavLink = ({
 
     return (
         <Link href={href}>
-            <a
-                className={cn(className, {
+            <a className={cn(className, {
                     [activeClassName]: router.pathname === href,
                 })}
             >

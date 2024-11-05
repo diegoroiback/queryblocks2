@@ -18,8 +18,8 @@ const Introduction = ({}: introductionProps) => {
                 <div className={styles.image} data-aos="fade-right">
                     <Image className={styles.img}
                         src='/images/projects/blinka-intro.png'
-                        width={590}
-                        height={412}
+                        width={4026}
+                        height={2603}
                         alt={'Blinka'}
                     />
                 </div>

@@ -54,24 +54,28 @@ const Challenges = ({}: ChallengesProps) => {
                 <div className={cn("p", styles.text)}>
                 Our video call feature includes an icon button with a #525252 background, 4-point corner radius, and icon-only functionality, enabling users to activate various in-app functions with ease.
                 </div>
-                <Image className={styles.img}
-                    src='/images/projects/helpby-documentation1.png'
-                    width={592}
-                    height={132}
-                    alt={'Q-mission simulation'}
-                />
+                <div className={styles.image}>
+                    <Image className={styles.img}
+                        src='/images/projects/helpby-documentation1.png'
+                        width={112}
+                        height={72}
+                        alt={'Q-mission simulation'}
+                    />
+                </div>
                 <div className={cn("p", styles.subtitle)}>
                     01. Types
                 </div>
                 <div className={cn("p", styles.text)}>
                 We distinguish 19 different types of icon buttons – each one represents a different function of the app, such as rotating the camera, turning on/off the microphone, recording, etc.
                 </div>
-                <Image className={styles.img}
-                    src='/images/projects/helpby-documentation2.png'
-                    width={592}
-                    height={260}
-                    alt={'Q-mission simulation'}
-                />
+                <div className={styles.image}>
+                    <Image className={styles.img}
+                        src='/images/projects/helpby-documentation2.png'
+                        width={1305}
+                        height={546}
+                        alt={'Q-mission simulation'}
+                    />
+                </div>
             </div>
         </div>
     </div>
