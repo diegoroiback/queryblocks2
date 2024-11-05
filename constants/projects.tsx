@@ -185,11 +185,11 @@ export const projects = [
         tags: {
             industries: [
                 'Game',
-                'Action',
-                'Adventure',
             ],
             tecnologies: [
                 'Unity',
+                'C#',
+                'CodeMagic',
             ],
         },
         info: [

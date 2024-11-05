@@ -28,7 +28,7 @@ const Results = ({}: ResultsProps) => {
                             Tangible results, right on schedule
                         </div>
                     </div>
-                    <a className={styles.link}>See our portfolio</a>
+                    <a className={styles.link} href='/projects'>See our portfolio</a>
                 </div>
                 <div className={styles.list} data-aos="zoom-in">
                     {results.map((item, index) => (

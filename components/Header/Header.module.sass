@@ -18,7 +18,7 @@
     &.visible
         overflow: hidden
         &::before
-            background: linear-gradient(176deg, rgb(160 213 204 / 50%) 0%, rgb(21 21 21 / 95%) 100%)
+            background: linear-gradient(176deg, rgb(40 155 152 / 50%) 0%, rgba(21, 21, 21, 0.95) 100%)
             content: ''
             position: absolute
             left: -5%
@@ -36,6 +36,8 @@
             border-bottom: 0
     &.open.visible
         background: transparent
+        &::before
+            display: none
     &.open
         padding: 35px 15px
         &::before
@@ -44,6 +46,8 @@
 .container
     display: flex
     align-items: center
+    position: relative
+    z-index: 1
 
 .logo
     position: relative

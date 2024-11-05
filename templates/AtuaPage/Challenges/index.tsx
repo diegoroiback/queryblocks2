@@ -57,8 +57,8 @@ const Challenges = ({}: ChallengesProps) => {
                 <div className={styles.image}>
                     <Image className={styles.img}
                         src='/images/projects/atua-documentation.png'
-                        width={233}
-                        height={497}
+                        width={268}
+                        height={568}
                         alt={'Q-mission simulation'}
                     />
                 </div>
