@@ -58,6 +58,7 @@
     border-bottom: 1px solid $n4
     justify-content: space-between
     transition: padding .5s, background .5s
+    position: relative
     background: $n9
     &:hover
         @media (min-width: 1200px)
@@ -65,11 +66,11 @@
             padding-bottom: 80px
             padding-top: 80px
     +d
-        background: $n7
+        background: $n8
         padding: 50px
     +s
-        padding-left: 20px
-        padding-right: 20px
+        padding-left: 30px
+        padding-right: 30px
         border: 1px solid $n4
         border-radius: 3px
 
@@ -100,8 +101,9 @@
 .text
     width: 35%
     +d
-        padding-top: 24px
         width: 100%
+    +s
+        min-height: 100px
 
 .tags
     width: 40%
@@ -115,12 +117,13 @@
     &>div:last-child
         .tag
             +roboto
+            +s
+                position: absolute
+                right: 0
+                top: -219px
 
 .tag
     border: 1px solid $n2
     padding: 4px 10px
     font-size: 16px
     border-radius: 8px
-    background-color: $n8
-    &:hover
-        background-color: $n7

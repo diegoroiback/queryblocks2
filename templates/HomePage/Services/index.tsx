@@ -46,7 +46,7 @@ const Services = ({}: ServicesProps) => {
                             <p className={styles.text} data-aos="fade-up">{item.text}</p>
                             <div className={styles.tags} data-aos="fade-left">
                                 {item.tags.map((tag, index) => (
-                                    <div key={index}>
+                                    <div key={index} className={styles.tagg}>
                                         <p className={styles.tag}>{tag.title}</p>
                                     </div>
                                 ))}
